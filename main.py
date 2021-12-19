@@ -103,7 +103,7 @@ df = preprocessor(df)
 # doc2vec
 # word2vec (200, 128) -> 128, (50, 128) -> 128, (120, 128) -> 128
 
-# %%
+# %% use the pre-trained model to get the word embeddings.
 
 model = SentenceTransformer('all-distilroberta-v1')
 model.max_seq_length = 512
@@ -112,11 +112,9 @@ model.max_seq_length = 512
 corpus_embeddings = model.encode(Resume_corpus)
 print(corpus_embeddings.shape)
 
-# %%
-
 np.save('corpus_embeddings.npy', corpus_embeddings)
 
-# %%
+# %% load the word embeddings.
 
 corpus_embeddings = np.load('corpus_embeddings.npy')
 
@@ -124,7 +122,7 @@ corpus_embeddings = np.load('corpus_embeddings.npy')
 
 ### Apply k-Means clustering on the embeddings
 
-# %% using elbow method to choose the cluster number.
+# %% use the elbow method to choose the optimal cluster number.
 pair_clusters = 25
 l_compared: list = list()
 for k in range(2, pair_clusters):
@@ -142,11 +140,11 @@ print(f"optimal num_clesters: {num_clusters_optimal}")
 num_clusters: int = num_clusters_optimal
 print(f"--- setting the num_clusters: {num_clusters} ---")
 
-# %% setting clusters number manually.
+# %% set the clusters number manually.
 num_clusters: int = 24
 print(f"--- setting the num_clusters: {num_clusters} ---")
 
-# %% Using the pre-trained model.
+# %% clustering.
 
 # num_clusters = df.groupby('Category').ngroups  # 24
 clustering_model = KMeans(n_clusters=num_clusters)
@@ -162,6 +160,10 @@ for sentence_id, cluster_id in enumerate(cluster_assignment):
 print('Number of resumes in each cluster')
 for i, cluster in enumerate(clustered_resumes):
     print('Cluster {}: {}'.format(i + 1, len(cluster)))
+
+print(
+    f"Adjusted Rand Index: {metrics.adjusted_rand_score(df['Category_label'], cluster_assignment)}"
+)
 
 # %%
 
@@ -229,9 +231,7 @@ plt.show()
 # plt.legend()
 # plt.show()
 
-# %%
-
-# PCA降成2維 -> kMeans -> 畫圖 -> 加上某職業
+# %% PCA降成2維 -> kMeans -> 畫圖 -> 加上某職業
 domain = 'CHEF'
 
 pca = PCA(2)
@@ -243,7 +243,8 @@ clustering_model = KMeans(n_clusters=num_clusters)
 clustering_model.fit(corpus_embeddings_2d)
 cluster_assignment = clustering_model.labels_
 
-plt.figure(figsize=(15, 15))
+mpl.rcParams['lines.markersize'] = 2
+# plt.figure(figsize=(15, 15))
 
 for i in range(num_clusters):
     plt.scatter(
@@ -259,6 +260,7 @@ df_group = df_gb.get_group('FINANCE')
 group_corpus_embeddings = corpus_embeddings_2d[df_group.index]
 plt.scatter(group_corpus_embeddings[:, 0], group_corpus_embeddings[:, 1], label='FINANCE', c='red')
 
+plt.title()
 plt.legend()
 plt.show()
 
