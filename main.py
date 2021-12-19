@@ -1,87 +1,93 @@
-#%%
+# %%
 
-import re # for cleaning Resume_str
+import re  # for cleaning Resume_str
 import pandas as pd
 import csv
-import torch
+import matplotlib.pyplot as plt
+from sklearn.decomposition import PCA
 import numpy as np
+from sklearn.cluster import KMeans
+import torch
+from sentence_transformers import SentenceTransformer, util
 
-#%% md
+
+# %% md
 
 ### Load file
 
-#%%
+# %%
 
 file_path = 'Resume.csv'
 df = pd.read_csv(file_path, error_bad_lines=False)
 
-#%% md
+# %% md
 
 ### Data observation
 
-#%%
-
-df.columns
-
-#%%
+# %% load dataframe.
 
 df = df.drop(columns=['Resume_html'])
-df.columns
+print(
+    f"The columns of dataframe: {df.columns}")
+print(
+    f"The first rows of dataframe: {df.head(5)}"
+)
 
-#%%
+# %%
 
-df.head(5)
+print(
+    df.Resume_str[0]
+)
 
-#%%
+# %%
 
-df.Resume_str[0]
+print(
+    df.info()
+)
 
-#%%
-
-df.info()
-
-#%%
+# %%
 
 df_gb = df.groupby('Category')
 print('Number of Category: {}'.format(df_gb.ngroups))
 print(df_gb.size())
 
-#%% md
+
+# %% md
 
 ### Preprocess data
 
-#%%
+# %%
+
 
 def clean_spaces(s):
     s = ' '.join(re.split('[ ]+', s.strip()))
 
     return s
 
+
 # Todo:
 # add more preprocess function for preprocessor
+
 
 def preprocessor(df):
     df['Resume_str'] = df['Resume_str'].apply(lambda x: clean_spaces(x))
 
     return df
 
-#%%
 
 df = preprocessor(df)
 
-#%% md
+
+# %% md
 
 ### Map Resume_str to a embedding (vector)
 
-#%%
-
-import torch
-from sentence_transformers import SentenceTransformer, util
+# %%
 
 # doc2vec
 # word2vec (200, 128) -> 128, (50, 128) -> 128, (120, 128) -> 128
 
-#%%
+# %%
 
 model = SentenceTransformer('all-distilroberta-v1')
 model.max_seq_length = 512
@@ -93,67 +99,74 @@ Resume_corpus = df['Resume_str'].tolist()
 corpus_embeddings = model.encode(Resume_corpus)
 print(corpus_embeddings.shape)
 
-#%%
+# %%
 
 np.save('corpus_embeddings.npy', corpus_embeddings)
 
-#%%
+# %%
 
 corpus_embeddings = np.load('corpus_embeddings.npy')
 
-#%% md
+# %% md
 
 ### Apply k-Means clustering on the embeddings
 
-#%%
+# %% using elbow method to choose the cluter number.
+pair_clusters = 25
+l_compared: list = list()
+for k in range(2, pair_clusters):
+    kmeans = KMeans(n_clusters=k)
+    kmeans.fit(corpus_embeddings)
+    l_compared.append(kmeans.inertia_)
 
-import numpy as np
-from sklearn.cluster import KMeans
+fig, ax = plt.subplots()
+ax.plot(range(2, pair_clusters), l_compared)
+ax.set_title("elbow function for selecting cluster number parameter.")
+plt.show()
+l_inertia: list = [l_compared[s] - l_compared[s + 1] for s in range(len(l_compared) - 1)]
+num_clusters_optimal = int(np.argmin(l_inertia))
+print(f"optimal num_clesters: {num_clusters_optimal}")
+num_clusters: int = num_clusters_optimal
+print(f"--- setting the num_clusters: {num_clusters} ---")
 
-num_clusters = df.groupby('Category').ngroups # 24
+# %% setting clusters number manually.
+num_clusters: int = 24
+print(f"--- setting the num_clusters: {num_clusters} ---")
+
+# %% Using the pre-trained model.
+
+# num_clusters = df.groupby('Category').ngroups  # 24
 clustering_model = KMeans(n_clusters=num_clusters)
 
 clustering_model.fit(corpus_embeddings)
-cluster_assignment = clustering_model.labels_ # Get the clustered label for each embedding
+cluster_assignment = clustering_model.labels_  # Get the clustered label for each embedding
 print(cluster_assignment.shape)
 
-clustered_resumes = [[] for i in range(num_clusters)] # Will contain embeddings for each cluster
+clustered_resumes = [[] for i in range(num_clusters)]  # Will contain embeddings for each cluster
 for sentence_id, cluster_id in enumerate(cluster_assignment):
     clustered_resumes[cluster_id].append(Resume_corpus[sentence_id])
 
-#%%
-
 print('Number of resumes in each cluster')
 for i, cluster in enumerate(clustered_resumes):
-    print('Cluster {}: {}'.format(i+1, len(cluster)))
+    print('Cluster {}: {}'.format(i + 1, len(cluster)))
 
-#%%
+# %%
 
 # Todo:
 # 1. Visualize the clustered result
 # 2. Try applying other clustering methods
 # 3. Other stuff that can perform on cluster, e.g. Topic modeling?
 
-#%% md
+# %% md
 
 ### Visualize the clustered result
 
-#%%
 
-import numpy as np
-import matplotlib.pyplot as plt
-from sklearn.cluster import KMeans
-from sklearn.decomposition import PCA
-
-#%%
-
-# PCA降成2維 -> kMeans -> 畫圖
+# %% PCA降成2維 -> kMeans -> 畫圖
 # 768 -> 2
 
 pca = PCA(2)
-corpus_embeddings_2d = pca.fit_transform(corpus_embeddings) # (2484, 768) -> (2484, 2)
-
-num_clusters = df.groupby('Category').ngroups # 24
+corpus_embeddings_2d = pca.fit_transform(corpus_embeddings)  # (2484, 768) -> (2484, 2)
 
 clustering_model = KMeans(n_clusters=num_clusters)
 clustering_model.fit(corpus_embeddings_2d)
@@ -162,30 +175,31 @@ cluster_assignment = clustering_model.labels_
 plt.figure(figsize=(15, 15))
 
 for i in range(num_clusters):
-  plt.scatter(corpus_embeddings_2d[cluster_assignment==i, 0], corpus_embeddings_2d[cluster_assignment==i, 1])
+    plt.scatter(
+        corpus_embeddings_2d[cluster_assignment == i, 0],
+        corpus_embeddings_2d[cluster_assignment == i, 1]
+    )
 
-plt.legend()
 plt.show()
 
-#%%
+# %% kMeans -> 隨機挑2維畫圖  * 隨機挑兩維顯示的方法，在多維空間下可能無意義，因此先註解掉。
 
-# kMeans -> 隨機挑2維畫圖
+# clustering_model = KMeans(n_clusters=num_clusters)
+# clustering_model.fit(corpus_embeddings)  # (2484, 768)
+# cluster_assignment = clustering_model.labels_
+#
+# plt.figure(figsize=(15, 15))
+#
+# for i in range(num_clusters):
+#   plt.scatter(
+#       corpus_embeddings[cluster_assignment == i, 2],
+#       corpus_embeddings[cluster_assignment == i, 1]
+#   )
+#
+# plt.legend()
+# plt.show()
 
-num_clusters = df.groupby('Category').ngroups # 24
-
-clustering_model = KMeans(n_clusters=num_clusters)
-clustering_model.fit(corpus_embeddings) # (2484, 768)
-cluster_assignment = clustering_model.labels_
-
-plt.figure(figsize=(15, 15))
-
-for i in range(num_clusters):
-  plt.scatter(corpus_embeddings[cluster_assignment==i, 2], corpus_embeddings[cluster_assignment==i, 1])
-
-plt.legend()
-plt.show()
-
-#%%
+# %%
 
 # PCA降成2維 -> kMeans -> 畫圖 -> 加上某職業
 domain = 'CHEF'
@@ -193,7 +207,7 @@ domain = 'CHEF'
 pca = PCA(2)
 corpus_embeddings_2d = pca.fit_transform(corpus_embeddings)
 
-num_clusters = df.groupby('Category').ngroups # 24
+# num_clusters = df.groupby('Category').ngroups  # 24
 
 clustering_model = KMeans(n_clusters=num_clusters)
 clustering_model.fit(corpus_embeddings_2d)
@@ -202,7 +216,10 @@ cluster_assignment = clustering_model.labels_
 plt.figure(figsize=(15, 15))
 
 for i in range(num_clusters):
-  plt.scatter(corpus_embeddings_2d[cluster_assignment==i, 0], corpus_embeddings_2d[cluster_assignment==i, 1], s=3)
+    plt.scatter(
+        corpus_embeddings_2d[cluster_assignment == i, 0],
+        corpus_embeddings_2d[cluster_assignment == i, 1], s=3
+    )
 
 df_group = df_gb.get_group('CHEF')
 group_corpus_embeddings = corpus_embeddings_2d[df_group.index]
@@ -212,15 +229,15 @@ df_group = df_gb.get_group('FINANCE')
 group_corpus_embeddings = corpus_embeddings_2d[df_group.index]
 plt.scatter(group_corpus_embeddings[:, 0], group_corpus_embeddings[:, 1], label='FINANCE', c='red')
 
-
 plt.legend()
 plt.show()
 
-#%% md
+
+# %% md
 
 ### Find the cross domain (category) resumes
 
-#%%
+# %%
 
 def get_avg_embeddings(df_gb, group_name):
     print('Group name: {}'.format(group_name))
@@ -237,60 +254,65 @@ def get_avg_embeddings(df_gb, group_name):
 
     return group_avg_embedding
 
-#%%
+
+# %%
 
 def get_avg_embeddings_revised(df_gb, corpus_embeddings, group_name):
-  df_group = df_gb.get_group(group_name)
-  group_corpus_embeddings = corpus_embeddings[df_group.index] # (110, 768)
-  group_avg_embedding = np.mean(group_corpus_embeddings, axis=0)
-  return group_avg_embedding
+    df_group = df_gb.get_group(group_name)
+    group_corpus_embeddings = corpus_embeddings[df_group.index]  # (110, 768)
+    group_avg_embedding = np.mean(group_corpus_embeddings, axis=0)
+    return group_avg_embedding
 
-#%%
+
+# %%
 
 def search_resumeID(query_embedding, corpus_embeddings, top_k):
-  hits = util.semantic_search(query_embedding, corpus_embeddings, top_k=top_k)
-  hits = hits[0]
-  for hit in hits:
-    print(df.ID[hit['corpus_id']], "(Score: {:.4f})".format(hit['score']))
+    hits = util.semantic_search(query_embedding, corpus_embeddings, top_k=top_k)
+    hits = hits[0]
+    for hit in hits:
+        print(df.ID[hit['corpus_id']], "(Score: {:.4f})".format(hit['score']))
 
-#%%
+
+# %%
 
 corpus_embeddings = model.encode(Resume_corpus)
 
-A  = [ 1, 2, 3, ...] # 768
-B  = [ 8, 2, 1, ...] # 768
+A = [1, 2, 3, ...]  # 768
+B = [8, 2, 1, ...]  # 768
 avg = [4.5, 2, 2, ...]
 
-#%%
+# %%
 
 ACCNT_avg_embedding = get_avg_embeddings_revised(df_gb, corpus_embeddings, 'ACCOUNTANT')
 IT_avg_embedding = get_avg_embeddings_revised(df_gb, corpus_embeddings, 'INFORMATION-TECHNOLOGY')
 
-#%%
+# %%
 
 query_embedding = (ACCNT_avg_embedding + IT_avg_embedding) / 2
 search_resumeID(query_embedding, corpus_embeddings, top_k=5)
 
-#%%
+
+# %%
 
 # Todo:
 # 1. Cross 3 or more domain (categories)
 # 2. Find qualitative example (we can show in report/presentation)
 # 3. Other vector (embedding) operation to perform, i.e., other task
 
-#%% md
+# %% md
 
 ### Cross 3 or more domain (categories)
 
-#%%
+# %%
 
 def cross_domain(df_gb, domains, corpus_embeddings, top_k):
-  avg_embeddings = []
-  for domain in domains:
-    avg_embeddings.append(get_avg_embeddings_revised(df_gb, corpus_embeddings, domain))
-  query_embedding = np.mean(avg_embeddings, axis=0) # 768
-  search_resumeID(query_embedding, corpus_embeddings, top_k)
+    avg_embeddings = []
+    for domain in domains:
+        avg_embeddings.append(get_avg_embeddings_revised(df_gb, corpus_embeddings, domain))
+    query_embedding = np.mean(avg_embeddings, axis=0)  # 768
+    search_resumeID(query_embedding, corpus_embeddings, top_k)
 
-#%%
+
+# %%
 
 cross_domain(df_gb, ['ACCOUNTANT', 'ADVOCATE', 'AGRICULTURE'], corpus_embeddings, 5)
