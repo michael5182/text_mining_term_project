@@ -1,12 +1,15 @@
 # %%
 
 import re  # for cleaning Resume_str
+
 import pandas as pd
-import csv
-import matplotlib.pyplot as plt
-from sklearn.decomposition import PCA
 import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib as mpl
+from sklearn.decomposition import PCA
 from sklearn.cluster import KMeans
+from sklearn.manifold import TSNE
+from sklearn import metrics
 import torch
 from sentence_transformers import SentenceTransformer, util
 
@@ -51,6 +54,10 @@ df_gb = df.groupby('Category')
 print('Number of Category: {}'.format(df_gb.ngroups))
 print(df_gb.size())
 
+# Corpus with resumes
+Resume_corpus = df['Resume_str'].tolist()
+
+
 
 # %% md
 
@@ -92,9 +99,6 @@ df = preprocessor(df)
 model = SentenceTransformer('all-distilroberta-v1')
 model.max_seq_length = 512
 
-# Corpus with resumes
-Resume_corpus = df['Resume_str'].tolist()
-
 # Calculate the embeddng for every resume_str
 corpus_embeddings = model.encode(Resume_corpus)
 print(corpus_embeddings.shape)
@@ -111,7 +115,7 @@ corpus_embeddings = np.load('corpus_embeddings.npy')
 
 ### Apply k-Means clustering on the embeddings
 
-# %% using elbow method to choose the cluter number.
+# %% using elbow method to choose the cluster number.
 pair_clusters = 25
 l_compared: list = list()
 for k in range(2, pair_clusters):
@@ -161,6 +165,22 @@ for i, cluster in enumerate(clustered_resumes):
 
 ### Visualize the clustered result
 
+# %% using t-SNE to demostrate the result of clustering.
+
+corpus_embeddings_2d_tsne = TSNE(
+    n_components=2,
+    learning_rate='auto',
+    init='random').fit_transform(corpus_embeddings)  # (2484, 768) -> (2484, 2)
+
+mpl.rcParams['lines.markersize'] = 2
+fig, ax = plt.subplots(layout='constrained')
+ax.set_title(f"The plotting of t-SNE method with {num_clusters} clusters.")
+for i in range(num_clusters):
+    plt.scatter(
+        corpus_embeddings_2d_tsne[cluster_assignment == i, 0],
+        corpus_embeddings_2d_tsne[cluster_assignment == i, 1]
+    )
+plt.show()
 
 # %% PCA降成2維 -> kMeans -> 畫圖
 # 768 -> 2
@@ -172,14 +192,15 @@ clustering_model = KMeans(n_clusters=num_clusters)
 clustering_model.fit(corpus_embeddings_2d)
 cluster_assignment = clustering_model.labels_
 
-plt.figure(figsize=(15, 15))
-
+# plt.figure(figsize=(15, 15))
+mpl.rcParams['lines.markersize'] = 2
 for i in range(num_clusters):
     plt.scatter(
         corpus_embeddings_2d[cluster_assignment == i, 0],
         corpus_embeddings_2d[cluster_assignment == i, 1]
     )
 
+plt.title(f"The plotting of PCA method with {num_clusters} clusters.")
 plt.show()
 
 # %% kMeans -> 隨機挑2維畫圖  * 隨機挑兩維顯示的方法，在多維空間下可能無意義，因此先註解掉。
