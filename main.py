@@ -1,6 +1,8 @@
 # %%
 
 import re  # for cleaning Resume_str
+from collections import Counter
+import json
 
 import pandas as pd
 import numpy as np
@@ -35,25 +37,32 @@ print(
 print(
     f"The first rows of dataframe: {df.head(5)}"
 )
-
-# %%
-
 print(
     df.Resume_str[0]
 )
-
-# %%
-
 print(
     df.info()
 )
+# %% labeling.
+d_label: dict = {s: i for i, s in enumerate(set(df['Category'].tolist()))}
+df['Category_label'] = df['Category'].map(d_label).fillna(np.nan)
+assert sorted(Counter(df['Category']).values()) == sorted(Counter(df['Category_label']).values())
 
+# print(
+#     json.dumps(
+#         Counter(df['Category']), indent=4)
+# )
+# print(
+#     json.dumps(
+#         Counter(df['Category_label']), indent=4)
+# )
 # %%
 
 df_gb = df.groupby('Category')
 print('Number of Category: {}'.format(df_gb.ngroups))
 print(df_gb.size())
 
+# %%
 # Corpus with resumes
 Resume_corpus = df['Resume_str'].tolist()
 
