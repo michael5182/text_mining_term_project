@@ -232,7 +232,8 @@ plt.show()
 # plt.show()
 
 # %% PCA降成2維 -> kMeans -> 畫圖 -> 加上某職業
-domain = 'CHEF'
+domain1 = 'CHEF'
+domain2 = 'FINANCE'
 
 pca = PCA(2)
 corpus_embeddings_2d = pca.fit_transform(corpus_embeddings)
@@ -252,15 +253,15 @@ for i in range(num_clusters):
         corpus_embeddings_2d[cluster_assignment == i, 1], s=3
     )
 
-df_group = df_gb.get_group('CHEF')
+df_group = df_gb.get_group(domain1)
 group_corpus_embeddings = corpus_embeddings_2d[df_group.index]
 plt.scatter(group_corpus_embeddings[:, 0], group_corpus_embeddings[:, 1], label='CHEF', c='black')
 
-df_group = df_gb.get_group('FINANCE')
+df_group = df_gb.get_group(domain2)
 group_corpus_embeddings = corpus_embeddings_2d[df_group.index]
 plt.scatter(group_corpus_embeddings[:, 0], group_corpus_embeddings[:, 1], label='FINANCE', c='red')
 
-plt.title()
+plt.title(f"The plotting of clustering for `{domain1}` and `{domain2}` features")
 plt.legend()
 plt.show()
 
