@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1640337157 "report.tex" "report.pdf" "report" 1640337171
+["pdflatex"] 1640350382 "report.tex" "report.pdf" "report" 1640350382
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -8,7 +8,6 @@
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm" 1246382020 908 2921f8a10601f252058503cc6570e581 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm" 1246382020 940 75ac932a52f80982a9f8ea75d03a34cf ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1246382020 940 228d6584342e91276bf566bcf9716b83 ""
-  "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1136768653 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr6.tfm" 1136768653 1300 b62933e007d01cfd073f79b963c01526 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr7.tfm" 1136768653 1300 53d07721103816e093902637bc167021 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr9.tfm" 1136768653 1292 6b21b9c2c7bebb38aa2273f7ca0fb3af ""
@@ -120,7 +119,6 @@
   "/usr/local/texlive/2020/texmf-dist/tex/latex/microtype/microtype-xetex.def" 1574121697 14109 448fe4388dde5981289f9ae8c547a196 ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/microtype/microtype.cfg" 1574121697 24293 cbbba0a351268f01b03f4a3b8b367d3c ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/microtype/microtype.sty" 1574121697 71539 3e8331ef062d90caeae5fc7360dcd5bf ""
-  "/usr/local/texlive/2020/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg" 1570829597 9832 c318e9b04f7eeaed0abe3ea0efa7f952 ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/microtype/mt-msa.cfg" 1570829597 5893 1a8b936193a3ad84972b7098edd47fb7 ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/microtype/mt-msb.cfg" 1570829597 5558 8dd91de9252789fb361ad96b452fc4a7 ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/ms/everysel.sty" 1320274502 4623 936bfb87af7b91b6496a2317f80db16b ""
@@ -155,14 +153,13 @@
   "/usr/local/texlive/2020/texmf-dist/web2c/texmf.cnf" 1583102494 39451 60d7debd9ef8ece44cbe965493576c2d ""
   "/usr/local/texlive/2020/texmf-var/web2c/xetex/xelatex.fmt" 1592375834 4769627 c9e53ad0a243c0c6da04221c9ab89c3a ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
-  "comment.cut" 1640337159 89 751d6bfeac55690c81fe9853f1dd77be "pdflatex"
-  "report.aux" 1640337160 5168 fca5dca46e19d876c7d14d9cdfd7de38 "pdflatex"
-  "report.out" 1640337160 3498 fa61de38f761f434ab85ecdc0fe89a63 "pdflatex"
-  "report.tex" 1640336794 28348 eed91ec53eb7bd418efecaf464259c58 ""
-  "sample-franklin" 0 -1 0 ""
+  "comment.cut" 1640350384 77 f580852cc32a7eb85a492eb195d23de8 "pdflatex"
+  "report.aux" 1640350378 1852 a96937fbaa7121a33dea5a342eb7f805 "pdflatex"
+  "report.out" 1640350378 891 ee3769fe68a740bdd39987ab3b9ed67c "pdflatex"
+  "report.tex" 1640350377 6584 147f3a64954f612746e75d771e954614 ""
   (generated)
   "report.out"
-  "report.pdf"
   "comment.cut"
+  "report.pdf"
   "report.log"
   "report.aux"

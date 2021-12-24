@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.6.17)  24 DEC 2021 17:12
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.6.17)  24 DEC 2021 20:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1287,57 +1287,57 @@ Package fontspec Info: Font family 'SongtiSC(0)' created for font 'Songti SC'
 )) (/usr/local/texlive/2020/texmf-dist/tex/latex/ctex/config/ctex.cfg
 File: ctex.cfg 2019/05/29 v2.4.16 Configuration file (CTEX)
 )
-Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 87.
+Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 66.
 \c@theorem=\count330
  Excluding comment 'screenonly' Include comment 'printonly' Include comment 'anonsuppress' (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/nxlmi/m/it on input line 87.
-LaTeX Font Info:    Trying to load font information for OML+nxlmi on input line 87.
+LaTeX Font Info:    Checking defaults for OML/nxlmi/m/it on input line 66.
+LaTeX Font Info:    Trying to load font information for OML+nxlmi on input line 66.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/newtx/omlnxlmi.fd
 File: omlnxlmi.fd 2013/11/19 Fontinst v1.933 font definitions for OML/nxlmi.
 )
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 87.
-LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 87.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 66.
+LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 66.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 87.
-LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 87.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 66.
+LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 66.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 87.
-LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 87.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 66.
+LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 66.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Trying to load font information for OT1+LinLibertine(0) on input line 87.
-LaTeX Font Info:    No file OT1LinLibertine(0).fd. on input line 87.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Trying to load font information for OT1+LinLibertine(0) on input line 66.
+LaTeX Font Info:    No file OT1LinLibertine(0).fd. on input line 66.
 
 
 LaTeX Font Warning: Font shape `OT1/LinLibertine(0)/m/n' undefined
-(Font)              using `OT1/cmr/m/n' instead on input line 87.
+(Font)              using `OT1/cmr/m/n' instead on input line 66.
 
 Requested font "cmr7" at 7.52812pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr7.tfm
@@ -1353,7 +1353,7 @@ Requested font "ntxexx" at 7.52812pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/ntxexx.tfm
 Requested font "ntxexx" at 5.0pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/ntxexx.tfm
-LaTeX Font Info:    Trying to load font information for U+msa on input line 87.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 66.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
@@ -1361,7 +1361,7 @@ Requested font "msam7" at 7.52812pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
 Requested font "msam5" at 5.0pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
-LaTeX Font Info:    Trying to load font information for U+msb on input line 87.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 66.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
@@ -1369,7 +1369,7 @@ Requested font "msbm7" at 7.52812pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 Requested font "msbm5" at 5.0pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 87.
+LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 66.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
 )
@@ -1377,7 +1377,7 @@ Requested font "nxlmia" at 7.52812pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/nxlmia.tfm
 Requested font "nxlmia" at 5.0pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/nxlmia.tfm
-LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 87.
+LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 66.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
@@ -1385,7 +1385,7 @@ Requested font "ntxsym" at 7.52812pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/ntxsym.tfm
 Requested font "ntxsym" at 5.0pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/ntxsym.tfm
-LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 87.
+LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 66.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
@@ -1397,7 +1397,7 @@ Requested font "ntxexa" at 7.52812pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm
 Requested font "ntxexa" at 5.0pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm
-LaTeX Info: Redefining \microtypecontext on input line 87.
+LaTeX Info: Redefining \microtypecontext on input line 66.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
@@ -1409,7 +1409,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
  ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box63
-Package hyperref Info: Link coloring OFF on input line 87.
+Package hyperref Info: Link coloring OFF on input line 66.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/local/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
@@ -1417,9 +1417,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count331
 )
-LaTeX Info: Redefining \ref on input line 87.
-LaTeX Info: Redefining \pageref on input line 87.
-LaTeX Info: Redefining \nameref on input line 87.
+LaTeX Info: Redefining \ref on input line 66.
+LaTeX Info: Redefining \pageref on input line 66.
+LaTeX Info: Redefining \nameref on input line 66.
  (./report.out) (./report.out)
 \@outlinefile=\write4
 \openout4 = `report.out'.
@@ -1466,10 +1466,10 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
  ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 87.
+LaTeX Info: Redefining \selectfont on input line 66.
  Excluding 'CCSXML' comment.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 18.06749pt on input line 192.
+(Font)              scaled to size 18.06749pt on input line 172.
 Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 18.06749pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinLibertine_R.otf
 Requested font "PingFang SC/OT" at 18.06746pt
@@ -1497,7 +1497,7 @@ Requested font "PingFang SC/OT:script=hani;language=dflt;" at 18.06752pt
 Requested font "PingFang SC/OT:script=hani;language=dflt;" at 18.06752pt
  -> /System/Library/Fonts/PingFang.ttc
 LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
-(Font)              scaled to size 10.53937pt on input line 192.
+(Font)              scaled to size 10.53937pt on input line 172.
 Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.53937pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinBiolinum_R.otf
 Package microtype Info: Loading generic protrusion settings for font family
@@ -1530,27 +1530,47 @@ Package fontspec Info: Font family 'PingFangSC(0)' created for font 'PingFang
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
-(Font)              scaled to size 18.06749pt on input line 192.
+(Font)              scaled to size 18.06749pt on input line 172.
 Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 18.06749pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinBiolinum_R.otf
 LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/b/n' will be
-(Font)              scaled to size 18.06749pt on input line 192.
+(Font)              scaled to size 18.06749pt on input line 172.
 Requested font "[LinBiolinum_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 18.06749pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinBiolinum_RB.otf
-LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 12.045pt on input line 192.
-Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 12.045pt
- -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinLibertine_R.otf
-LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
-(Font)              scaled to size 12.045pt on input line 192.
-Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 12.045pt
- -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinBiolinum_R.otf
-Requested font "PingFang SC/OT:script=hani;language=dflt;" at 12.045pt
+Requested font "PingFang SC/B/OT:script=hani;language=dflt;" at 18.06749pt
  -> /System/Library/Fonts/PingFang.ttc
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `PingFangSC' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+Package microtype Info: Character `textendash ' is missing
+(microtype)             in font `TU/PingFangSC(0)/b/n/18.06749'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textemdash ' is missing
+(microtype)             in font `TU/PingFangSC(0)/b/n/18.06749'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteleft ' is missing
+(microtype)             in font `TU/PingFangSC(0)/b/n/18.06749'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteright ' is missing
+(microtype)             in font `TU/PingFangSC(0)/b/n/18.06749'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblleft ' is missing
+(microtype)             in font `TU/PingFangSC(0)/b/n/18.06749'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblright ' is missing
+(microtype)             in font `TU/PingFangSC(0)/b/n/18.06749'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
+(Font)              scaled to size 12.045pt on input line 172.
+Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 12.045pt
+ -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinLibertine_R.otf
+LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
+(Font)              scaled to size 12.045pt on input line 172.
+Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 12.045pt
+ -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinBiolinum_R.otf
+Requested font "PingFang SC/OT:script=hani;language=dflt;" at 12.045pt
+ -> /System/Library/Fonts/PingFang.ttc
 Package microtype Info: Character `textendash ' is missing
 (microtype)             in font `TU/PingFangSC(0)/m/n/12.045'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -1570,11 +1590,11 @@ Package microtype Info: Character `textquotedblright ' is missing
 (microtype)             in font `TU/PingFangSC(0)/m/n/12.045'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 192.
+(Font)              scaled to size 9.03374pt on input line 172.
 Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 9.03374pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinBiolinum_R.otf
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 192.
+(Font)              scaled to size 9.03374pt on input line 172.
 Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 9.03374pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinLibertine_R.otf
 Requested font "Songti SC Light/OT:language=dflt;" at 9.03374pt
@@ -1601,20 +1621,36 @@ Package microtype Info: Character `textquotedblleft ' is missing
 Package microtype Info: Character `textquotedblright ' is missing
 (microtype)             in font `TU/SongtiSC(0)/m/n/9.03374'.
 (microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/it' will be
-(Font)              scaled to size 7.52812pt on input line 192.
-Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 7.52812pt
- -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinLibertine_RI.otf
+Requested font "Songti SC Light/OT:language=dflt;" at 7.52812pt
+ -> /System/Library/Fonts/Supplemental/Songti.ttc
+Package microtype Info: Character `textendash ' is missing
+(microtype)             in font `TU/SongtiSC(0)/m/n/7.52812'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textemdash ' is missing
+(microtype)             in font `TU/SongtiSC(0)/m/n/7.52812'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteleft ' is missing
+(microtype)             in font `TU/SongtiSC(0)/m/n/7.52812'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteright ' is missing
+(microtype)             in font `TU/SongtiSC(0)/m/n/7.52812'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblleft ' is missing
+(microtype)             in font `TU/SongtiSC(0)/m/n/7.52812'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblright ' is missing
+(microtype)             in font `TU/SongtiSC(0)/m/n/7.52812'.
+(microtype)             Ignoring protrusion settings for this character.
 
 
-Class acmart Warning: \vspace should only be used to provide space above/below surrounding objects on input line 192.
+Class acmart Warning: \vspace should only be used to provide space above/below surrounding objects on input line 172.
 
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/n' will be
-(Font)              scaled to size 9.03374pt on input line 192.
+(Font)              scaled to size 9.03374pt on input line 172.
 Requested font "[LinLibertine_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 9.03374pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinLibertine_RB.otf
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/it' will be
-(Font)              scaled to size 9.03374pt on input line 192.
+(Font)              scaled to size 9.03374pt on input line 172.
 Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 9.03374pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinLibertine_RI.otf
 Requested font "cmr9" at 9.03374pt
@@ -1668,144 +1704,29 @@ Requested font "ntxexa" at 9.03374pt
 Requested font "ntxexa" at 6.0pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm
 LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/b/n' will be
-(Font)              scaled to size 10.53937pt on input line 194.
+(Font)              scaled to size 10.53937pt on input line 174.
 Requested font "[LinBiolinum_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.53937pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinBiolinum_RB.otf
-Requested font "cmr10" at 10.53937pt
- -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-Requested font "nxlmi" at 10.53937pt
- -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/nxlmi.tfm
-Requested font "nxlmi7" at 7.0pt
- -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/nxlmi7.tfm
-Requested font "ntxsy" at 10.53937pt
- -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/ntxsy.tfm
-Requested font "ntxsy7" at 7.0pt
- -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/ntxsy7.tfm
-Requested font "ntxexx" at 10.53937pt
- -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/ntxexx.tfm
-Requested font "ntxexx" at 7.0pt
- -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/ntxexx.tfm
-Requested font "msam10" at 10.53937pt
- -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-Requested font "msam7" at 7.0pt
- -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
-Requested font "msbm10" at 10.53937pt
- -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-Requested font "msbm7" at 7.0pt
- -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-Requested font "nxlmia" at 10.53937pt
- -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/nxlmia.tfm
-Requested font "nxlmia" at 7.0pt
- -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/nxlmia.tfm
-Requested font "ntxsym" at 10.53937pt
- -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/ntxsym.tfm
-Requested font "ntxsym" at 7.0pt
- -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/ntxsym.tfm
-Requested font "ntxsyc" at 10.53937pt
- -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/ntxsyc.tfm
-Requested font "ntxsyc" at 7.0pt
- -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/ntxsyc.tfm
-Requested font "ntxexa" at 10.53937pt
- -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm
-Requested font "ntxexa" at 7.0pt
- -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm
-LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 197.
-Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 7.0pt
- -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinLibertine_R.otf
- [1.1]
-Requested font "STFangsong/OT" at 10.53934pt
- -> /System/Library/AssetsV2/com_apple_MobileAsset_Font6/4c66b413a81d594dc2fc430266c1629c30a5237b.asset/AssetData/STFANGSO.ttf
-Requested font "STFangsong/OT" at 10.5394pt
- -> /System/Library/AssetsV2/com_apple_MobileAsset_Font6/4c66b413a81d594dc2fc430266c1629c30a5237b.asset/AssetData/STFANGSO.ttf
-
-
-Package fontspec Warning: Font "STFangsong" does not contain requested Script
-(fontspec)                "CJK".
-
-Requested font "STFangsong/OT:language=dflt;" at 10.53938pt
- -> /System/Library/AssetsV2/com_apple_MobileAsset_Font6/4c66b413a81d594dc2fc430266c1629c30a5237b.asset/AssetData/STFANGSO.ttf
-Requested font "STFangsong/BI/OT:language=dflt;" at 10.53938pt
- -> /System/Library/AssetsV2/com_apple_MobileAsset_Font6/4c66b413a81d594dc2fc430266c1629c30a5237b.asset/AssetData/STFANGSO.ttf
-
-Package fontspec Info: Could not resolve font "STFangsong/BI" (it probably
-(fontspec)             doesn't exist).
-
-Requested font "STFangsong/B/OT:language=dflt;" at 10.53938pt
- -> /System/Library/AssetsV2/com_apple_MobileAsset_Font6/4c66b413a81d594dc2fc430266c1629c30a5237b.asset/AssetData/STFANGSO.ttf
-
-Package fontspec Info: Could not resolve font "STFangsong/B" (it probably
-(fontspec)             doesn't exist).
-
-Requested font "STFangsong/I/OT:language=dflt;" at 10.53938pt
- -> /System/Library/AssetsV2/com_apple_MobileAsset_Font6/4c66b413a81d594dc2fc430266c1629c30a5237b.asset/AssetData/STFANGSO.ttf
-
-Package fontspec Info: Could not resolve font "STFangsong/I" (it probably
-(fontspec)             doesn't exist).
-
-Requested font "STFangsong/OT:language=dflt;" at 10.5394pt
- -> /System/Library/AssetsV2/com_apple_MobileAsset_Font6/4c66b413a81d594dc2fc430266c1629c30a5237b.asset/AssetData/STFANGSO.ttf
-LaTeX Font Info:    Trying to load font information for TU+zi4 on input line 208.
-LaTeX Font Info:    No file TUzi4.fd. on input line 208.
-
-LaTeX Font Warning: Font shape `TU/zi4/m/n' undefined
-(Font)              using `TU/lmr/m/n' instead on input line 208.
-
-Requested font "[lmroman10-regular]:mapping=tex-text;" at 10.53937pt
- -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf
-(/usr/local/texlive/2020/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg
-File: mt-LatinModernRoman.cfg 2013/03/13 v1.0 microtype config. file: Latin Modern Roman (RS)
-)
-
-Package fontspec Info: Font family 'STFangsong(0)' created for font
-(fontspec)             'STFangsong' with options [Script={CJK}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"STFangsong/OT:language=dflt;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `zi4' (encoding: TU).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/it' will be
-(Font)              scaled to size 10.53937pt on input line 211.
-Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.53937pt
- -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinLibertine_RI.otf
-LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/it' will be
-(Font)              scaled to size 7.0pt on input line 223.
-Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 7.0pt
- -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinLibertine_RI.otf
-LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 260.
-Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.0pt
- -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinBiolinum_R.otf
-LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
-(Font)              scaled to size 7.52812pt on input line 260.
-Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 7.52812pt
- -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinBiolinum_R.otf
- [2.2]
-Overfull \hbox (3.86397pt too wide) in paragraph at lines 262--266
-[][][]\TU/zi4/m/n/10.53937 anonymous,review[]\TU/LinLibertine(0)/m/n/10.53937 : Suitable for a “double-blind” conference submission. Anonymizes
- []
-
-LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/n' will be
-(Font)              scaled to size 10.53937pt on input line 284.
-Requested font "[LinLibertine_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.53937pt
- -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinLibertine_RB.otf
-[3.3] [4.4]
-Overfull \hbox (8.58334pt too wide) in paragraph at lines 396--400
-\TU/LinLibertine(0)/m/n/10.53937 Your work should use standard L[]T[]X sectioning commands: [][]\TU/zi4/m/n/10.53937 section[]\TU/LinLibertine(0)/m/n/10.53937 , [][]\TU/zi4/m/n/10.53937 subsection[]\TU/LinLibertine(0)/m/n/10.53937 , [][]\TU/zi4/m/n/10.53937 subsubsection[]\TU/LinLibertine(0)/m/n/10.53937 ,
- []
-
-
-Overfull \hbox (9.10008pt too wide) in paragraph at lines 406--409
-\TU/LinLibertine(0)/m/n/10.53937 The “[][]\TU/zi4/m/n/10.53937 acmart[]\TU/LinLibertine(0)/m/n/10.53937 ” document class includes the “[][]\TU/zi4/m/n/10.53937 booktabs[]\TU/LinLibertine(0)/m/n/10.53937 ” package — []$[][][][][] [] [] [] [][][][] [] [][][] [] [][][] [] [][][][][][][][]$[]
- []
-
+Requested font "PingFang SC/B/OT:script=hani;language=dflt;" at 10.53937pt
+ -> /System/Library/Fonts/PingFang.ttc
+Package microtype Info: Character `textendash ' is missing
+(microtype)             in font `TU/PingFangSC(0)/b/n/10.53937'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textemdash ' is missing
+(microtype)             in font `TU/PingFangSC(0)/b/n/10.53937'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteleft ' is missing
+(microtype)             in font `TU/PingFangSC(0)/b/n/10.53937'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteright ' is missing
+(microtype)             in font `TU/PingFangSC(0)/b/n/10.53937'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblleft ' is missing
+(microtype)             in font `TU/PingFangSC(0)/b/n/10.53937'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblright ' is missing
+(microtype)             in font `TU/PingFangSC(0)/b/n/10.53937'.
+(microtype)             Ignoring protrusion settings for this character.
 Requested font "Songti SC Light/OT:language=dflt;" at 10.53937pt
  -> /System/Library/Fonts/Supplemental/Songti.ttc
 Package microtype Info: Character `textendash ' is missing
@@ -1826,246 +1747,77 @@ Package microtype Info: Character `textquotedblleft ' is missing
 Package microtype Info: Character `textquotedblright ' is missing
 (microtype)             in font `TU/SongtiSC(0)/m/n/10.53937'.
 (microtype)             Ignoring protrusion settings for this character.
-Requested font "PingFang SC/OT:script=hani;language=dflt;" at 9.03374pt
- -> /System/Library/Fonts/PingFang.ttc
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/PingFangSC(0)/m/n/9.03374'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `TU/PingFangSC(0)/m/n/9.03374'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteleft ' is missing
-(microtype)             in font `TU/PingFangSC(0)/m/n/9.03374'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteright ' is missing
-(microtype)             in font `TU/PingFangSC(0)/m/n/9.03374'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblleft ' is missing
-(microtype)             in font `TU/PingFangSC(0)/m/n/9.03374'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblright ' is missing
-(microtype)             in font `TU/PingFangSC(0)/m/n/9.03374'.
-(microtype)             Ignoring protrusion settings for this character.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5.5]
-
-Package natbib Warning: Citation `Lamport:LaTeX' on page 6 undefined on input line 482.
-
-[6.6]
-Overfull \hbox (24.82741pt too wide) in paragraph at lines 491--495
-\TU/LinLibertine(0)/m/n/10.53937 A numbered display equation—one set off by vertical space from the text and centered horizontally—
- []
-
-
-./report.tex:523: LaTeX Error: File `sample-franklin' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.523 ...aphics[width=\linewidth]{sample-franklin}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.PDF,.ai,.AI,.png,.PNG,.jpg,.JPG,.jpeg,.JPEG,.jp2,.JP2,.jpf,.JPF,.bmp,.BMP,.ps,.PS,.eps,.EPS,.mps,.MPS,.pz,.eps.Z,.ps.Z,.ps.gz,.eps.gz
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-Requested font "Songti SC Bold/OT:language=dflt;" at 10.53937pt
- -> /System/Library/Fonts/Supplemental/Songti.ttc
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/SongtiSC(0)/b/n/10.53937'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `TU/SongtiSC(0)/b/n/10.53937'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteleft ' is missing
-(microtype)             in font `TU/SongtiSC(0)/b/n/10.53937'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteright ' is missing
-(microtype)             in font `TU/SongtiSC(0)/b/n/10.53937'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblleft ' is missing
-(microtype)             in font `TU/SongtiSC(0)/b/n/10.53937'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblright ' is missing
-(microtype)             in font `TU/SongtiSC(0)/b/n/10.53937'.
-(microtype)             Ignoring protrusion settings for this character.
-[7.7]
-LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/sc' will be
-(Font)              scaled to size 10.53937pt on input line 571.
-Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;+smcp;mapping=tex-text;" at 10.53937pt
- -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinLibertine_R.otf
-
-Underfull \vbox (badness 2173) has occurred while \output is active []
-
- [8.8]
-
-Package natbib Warning: Citation `Abril07' on page 9 undefined on input line 596.
-
-
-Package natbib Warning: Citation `Cohen07' on page 9 undefined on input line 597.
-
-
-Package natbib Warning: Citation `JCohen96' on page 9 undefined on input line 598.
-
-
-Package natbib Warning: Citation `Kosiur01' on page 9 undefined on input line 598.
-
-
-Package natbib Warning: Citation `Harel79' on page 9 undefined on input line 600.
-
-
-Package natbib Warning: Citation `Editor00' on page 9 undefined on input line 601.
-
-
-Package natbib Warning: Citation `Editor00a' on page 9 undefined on input line 602.
-
-
-Package natbib Warning: Citation `Spector90' on page 9 undefined on input line 604.
-
-
-Package natbib Warning: Citation `Douglass98' on page 9 undefined on input line 605.
-
-
-Package natbib Warning: Citation `Knuth97' on page 9 undefined on input line 606.
-
-
-Package natbib Warning: Citation `Andler79' on page 9 undefined on input line 608.
-
-
-Package natbib Warning: Citation `Hagerup1993' on page 9 undefined on input line 608.
-
-
-Package natbib Warning: Citation `Smith10' on page 9 undefined on input line 609.
-
-
-Package natbib Warning: Citation `VanGundy07' on page 9 undefined on input line 610.
-
-
-Package natbib Warning: Citation `Harel78' on page 9 undefined on input line 611.
-
-
-Package natbib Warning: Citation `Bornmann2019' on page 9 undefined on input line 612.
-
-
-Package natbib Warning: Citation `AnzarootPBM14' on page 9 undefined on input line 612.
-
-
-Package natbib Warning: Citation `Clarkson85' on page 9 undefined on input line 612.
-
-
-Package natbib Warning: Citation `anisi03' on page 9 undefined on input line 613.
-
-
-Package natbib Warning: Citation `Thornburg01' on page 9 undefined on input line 614.
-
-
-Package natbib Warning: Citation `Ablamowicz07' on page 9 undefined on input line 614.
-
-
-Package natbib Warning: Citation `Poker06' on page 9 undefined on input line 614.
-
-
-Package natbib Warning: Citation `Obama08' on page 9 undefined on input line 615.
-
-
-Package natbib Warning: Citation `Novak03' on page 9 undefined on input line 615.
-
-
-Package natbib Warning: Citation `Lee05' on page 9 undefined on input line 615.
-
-
-Package natbib Warning: Citation `JoeScientist001' on page 9 undefined on input line 616.
-
-
-Package natbib Warning: Citation `rous08' on page 9 undefined on input line 617.
-
-
-Package natbib Warning: Citation `SaeediMEJ10' on page 9 undefined on input line 618.
-
-
-Package natbib Warning: Citation `SaeediJETC10' on page 9 undefined on input line 618.
-
-
-Package natbib Warning: Citation `Kirschmer:2010:AEI:1958016.1958018' on page 9 undefined on input line 620.
-
-
-Package natbib Warning: Citation `MR781536' on page 9 undefined on input line 621.
-
-
-Package natbib Warning: Citation `MR781537' on page 9 undefined on input line 621.
-
-
-Package natbib Warning: Citation `2004:ITE:1009386.1010128' on page 9 undefined on input line 623.
-
-
-Package natbib Warning: Citation `Kirschmer:2010:AEI:1958016.1958018' on page 9 undefined on input line 623.
-
-
-Package natbib Warning: Citation `TUGInstmem' on page 9 undefined on input line 624.
-
-
-Package natbib Warning: Citation `Thornburg01' on page 9 undefined on input line 624.
-
-
-Package natbib Warning: Citation `CTANacmart' on page 9 undefined on input line 624.
-
-
-Package natbib Warning: Citation `R' on page 9 undefined on input line 625.
-
-
-Package natbib Warning: Citation `UMassCitations' on page 9 undefined on input line 625.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [9.9] Processing 'acks' comment.
+ Processing 'acks' comment.
 \openout3 = `comment.cut'.
 
  Comment 'acks' writing to comment.cut. Straight input of comment.cut. (./comment.cut)
 No file report.bbl.
 
-Package natbib Warning: There were undefined citations.
-
-
-Class acmart Warning: ACM keywords are mandatory for papers over two pages.
-
-
-./report.tex:725: Class acmart Error: An attempt to redefine \baselinestretch detected. Please do not do this for ACM submissions!.
+./report.tex:214: Class acmart Error: An attempt to redefine \baselinestretch detected. Please do not do this for ACM submissions!.
 
 See the acmart class documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.725 \end{document}
+l.214 \end{document}
                     
 This error message was generated by an \errmessage
 command, so I can't give any explicit help.
 Pretend that you're Hercule Poirot: Examine all clues,
 and deduce the truth by order and method.
 
-[10.10]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 725.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 725.
+
+Underfull \vbox (badness 1803) has occurred while \output is active []
+
+ [1.1]
+LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 214.
+Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.0pt
+ -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinBiolinum_R.otf
+LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
+(Font)              scaled to size 7.52812pt on input line 214.
+Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 7.52812pt
+ -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinBiolinum_R.otf
+Requested font "PingFang SC/OT:script=hani;language=dflt;" at 7.52812pt
+ -> /System/Library/Fonts/PingFang.ttc
+Package microtype Info: Character `textendash ' is missing
+(microtype)             in font `TU/PingFangSC(0)/m/n/7.52812'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textemdash ' is missing
+(microtype)             in font `TU/PingFangSC(0)/m/n/7.52812'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteleft ' is missing
+(microtype)             in font `TU/PingFangSC(0)/m/n/7.52812'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteright ' is missing
+(microtype)             in font `TU/PingFangSC(0)/m/n/7.52812'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblleft ' is missing
+(microtype)             in font `TU/PingFangSC(0)/m/n/7.52812'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblright ' is missing
+(microtype)             in font `TU/PingFangSC(0)/m/n/7.52812'.
+(microtype)             Ignoring protrusion settings for this character.
+ [2.2]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 214.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 214.
  (./report.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 725.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 725.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 214.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 214.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: FA61DE38F761F434AB85ECDC0FE89A63;3498.
+(rerunfilecheck)             Checksum: EE3769FE68A740BDD39987AB3B9ED67C;891.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 32285 strings out of 479418
- 645062 string characters out of 5884585
- 881325 words of memory out of 5000000
- 49099 multiletter control sequences out of 15000+600000
- 559089 words of font info for 166 fonts, out of 8000000 for 9000
+ 32044 strings out of 479418
+ 637542 string characters out of 5884585
+ 878424 words of memory out of 5000000
+ 48914 multiletter control sequences out of 15000+600000
+ 551666 words of font info for 138 fonts, out of 8000000 for 9000
  1509 hyphenation exceptions out of 8191
- 69i,12n,111p,836b,687s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,12n,111p,836b,442s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on report.pdf (10 pages).
+Output written on report.pdf (2 pages).
