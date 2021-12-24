@@ -130,15 +130,17 @@ for k in range(2, pair_clusters):
     kmeans.fit(corpus_embeddings)
     l_compared.append(kmeans.inertia_)
 
-fig, ax = plt.subplots()
-ax.plot(range(2, pair_clusters), l_compared)
-ax.set_title("elbow function for selecting cluster number parameter.")
-plt.show()
 l_inertia: list = [l_compared[s] - l_compared[s + 1] for s in range(len(l_compared) - 1)]
 num_clusters_optimal = int(np.argmin(l_inertia))
 print(f"optimal num_clesters: {num_clusters_optimal}")
 num_clusters: int = num_clusters_optimal
 print(f"--- setting the num_clusters: {num_clusters} ---")
+
+fig, ax = plt.subplots()
+ax.plot(range(2, pair_clusters), l_compared)
+# ax.set_title("elbow function for selecting cluster number parameter.")
+ax.set_title(f"optimal clustering number: {num_clusters_optimal}")
+plt.show()
 
 # %% set the clusters number manually.
 num_clusters: int = 24
@@ -176,7 +178,7 @@ print(
 
 ### Visualize the clustered result
 
-# %% using t-SNE to demostrate the result of clustering.
+# %% use t-SNE to demostrate the result of clustering.
 
 corpus_embeddings_2d_tsne = TSNE(
     n_components=2,
