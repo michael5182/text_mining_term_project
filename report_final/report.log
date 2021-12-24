@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.6.17)  24 DEC 2021 17:05
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.6.17)  24 DEC 2021 17:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**sample-acmsmall-conf.tex
-(./sample-acmsmall-conf.tex
+**report.tex
+(./report.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-03-06> (/usr/local/texlive/2020/texmf-dist/tex/latex/acmart/acmart.cls
 Document Class: acmart 2020/02/22 v1.70 Typesetting articles for the Association for Computing Machinery
@@ -1289,8 +1289,8 @@ File: ctex.cfg 2019/05/29 v2.4.16 Configuration file (CTEX)
 )
 Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 87.
 \c@theorem=\count330
- Excluding comment 'screenonly' Include comment 'printonly' Include comment 'anonsuppress' (./sample-acmsmall-conf.aux)
-\openout1 = `sample-acmsmall-conf.aux'.
+ Excluding comment 'screenonly' Include comment 'printonly' Include comment 'anonsuppress' (./report.aux)
+\openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/nxlmi/m/it on input line 87.
 LaTeX Font Info:    Trying to load font information for OML+nxlmi on input line 87.
@@ -1420,9 +1420,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 87.
 LaTeX Info: Redefining \pageref on input line 87.
 LaTeX Info: Redefining \nameref on input line 87.
- (./sample-acmsmall-conf.out) (./sample-acmsmall-conf.out)
+ (./report.out) (./report.out)
 \@outlinefile=\write4
-\openout4 = `sample-acmsmall-conf.out'.
+\openout4 = `report.out'.
 
 
 *geometry* driver: auto-detecting
@@ -1859,7 +1859,7 @@ Overfull \hbox (24.82741pt too wide) in paragraph at lines 491--495
  []
 
 
-./sample-acmsmall-conf.tex:523: LaTeX Error: File `sample-franklin' not found.
+./report.tex:523: LaTeX Error: File `sample-franklin' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -2025,7 +2025,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 \openout3 = `comment.cut'.
 
  Comment 'acks' writing to comment.cut. Straight input of comment.cut. (./comment.cut)
-No file sample-acmsmall-conf.bbl.
+No file report.bbl.
 
 Package natbib Warning: There were undefined citations.
 
@@ -2033,7 +2033,7 @@ Package natbib Warning: There were undefined citations.
 Class acmart Warning: ACM keywords are mandatory for papers over two pages.
 
 
-./sample-acmsmall-conf.tex:725: Class acmart Error: An attempt to redefine \baselinestretch detected. Please do not do this for ACM submissions!.
+./report.tex:725: Class acmart Error: An attempt to redefine \baselinestretch detected. Please do not do this for ACM submissions!.
 
 See the acmart class documentation for explanation.
 Type  H <return>  for immediate help.
@@ -2049,10 +2049,10 @@ and deduce the truth by order and method.
 [10.10]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 725.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 725.
- (./sample-acmsmall-conf.aux)
+ (./report.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 725.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 725.
-Package rerunfilecheck Info: File `sample-acmsmall-conf.out' has not changed.
+Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: FA61DE38F761F434AB85ECDC0FE89A63;3498.
 
 
@@ -2061,11 +2061,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
  ) 
 Here is how much of TeX's memory you used:
  32285 strings out of 479418
- 645286 string characters out of 5884585
- 881437 words of memory out of 5000000
+ 645062 string characters out of 5884585
+ 881325 words of memory out of 5000000
  49099 multiletter control sequences out of 15000+600000
  559089 words of font info for 166 fonts, out of 8000000 for 9000
  1509 hyphenation exceptions out of 8191
- 69i,12n,111p,850b,687s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,12n,111p,836b,687s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on sample-acmsmall-conf.pdf (10 pages).
+Output written on report.pdf (10 pages).

@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1640336738 "sample-acmsmall-conf.tex" "sample-acmsmall-conf.pdf" "sample-acmsmall-conf" 1640336784
+["pdflatex"] 1640337157 "report.tex" "report.pdf" "report" 1640337171
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -155,14 +155,14 @@
   "/usr/local/texlive/2020/texmf-dist/web2c/texmf.cnf" 1583102494 39451 60d7debd9ef8ece44cbe965493576c2d ""
   "/usr/local/texlive/2020/texmf-var/web2c/xetex/xelatex.fmt" 1592375834 4769627 c9e53ad0a243c0c6da04221c9ab89c3a ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
-  "comment.cut" 1640336741 89 751d6bfeac55690c81fe9853f1dd77be "pdflatex"
-  "sample-acmsmall-conf.aux" 1640336741 5168 fca5dca46e19d876c7d14d9cdfd7de38 "pdflatex"
-  "sample-acmsmall-conf.out" 1640336741 3498 fa61de38f761f434ab85ecdc0fe89a63 "pdflatex"
-  "sample-acmsmall-conf.tex" 1640336736 28348 eed91ec53eb7bd418efecaf464259c58 ""
+  "comment.cut" 1640337159 89 751d6bfeac55690c81fe9853f1dd77be "pdflatex"
+  "report.aux" 1640337160 5168 fca5dca46e19d876c7d14d9cdfd7de38 "pdflatex"
+  "report.out" 1640337160 3498 fa61de38f761f434ab85ecdc0fe89a63 "pdflatex"
+  "report.tex" 1640336794 28348 eed91ec53eb7bd418efecaf464259c58 ""
   "sample-franklin" 0 -1 0 ""
   (generated)
-  "sample-acmsmall-conf.log"
+  "report.out"
+  "report.pdf"
   "comment.cut"
-  "sample-acmsmall-conf.pdf"
-  "sample-acmsmall-conf.aux"
-  "sample-acmsmall-conf.out"
+  "report.log"
+  "report.aux"
