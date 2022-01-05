@@ -316,9 +316,13 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/ntxsyc.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/ntxsyc.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm
+INPUT ./images/counter_of_application.png
+INPUT ./images/elbow_method.png
 OUTPUT comment.cut
 INPUT comment.cut
 INPUT comment.cut
+INPUT report.bbl
+INPUT report.bbl
 INPUT report.aux
 INPUT ./report.out
 INPUT ./report.out

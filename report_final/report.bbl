@@ -1,0 +1,167 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{10}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[\protect\citeauthoryear{Bhawal}{Bhawal}{2021}]%
+        {kaggle_dataset}
+\bibfield{author}{\bibinfo{person}{Snehaan Bhawal}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \bibinfo{title}{Resume Dataset}.
+\newblock
+  \bibinfo{howpublished}{\url{https://www.kaggle.com/snehaanbhawal/resume-dataset}}.
+\newblock
+\newblock
+\shownote{Accessed: 2021-12-30.}
+
+
+\bibitem[\protect\citeauthoryear{Buitinck, Louppe, Blondel, Pedregosa, Mueller,
+  Grisel, Niculae, Prettenhofer, Gramfort, Grobler, Layton, VanderPlas, Joly,
+  Holt, and Varoquaux}{Buitinck et~al\mbox{.}}{2013}]%
+        {sklearn_api}
+\bibfield{author}{\bibinfo{person}{Lars Buitinck}, \bibinfo{person}{Gilles
+  Louppe}, \bibinfo{person}{Mathieu Blondel}, \bibinfo{person}{Fabian
+  Pedregosa}, \bibinfo{person}{Andreas Mueller}, \bibinfo{person}{Olivier
+  Grisel}, \bibinfo{person}{Vlad Niculae}, \bibinfo{person}{Peter
+  Prettenhofer}, \bibinfo{person}{Alexandre Gramfort}, \bibinfo{person}{Jaques
+  Grobler}, \bibinfo{person}{Robert Layton}, \bibinfo{person}{Jake VanderPlas},
+  \bibinfo{person}{Arnaud Joly}, \bibinfo{person}{Brian Holt}, {and}
+  \bibinfo{person}{Ga{\"{e}}l Varoquaux}.} \bibinfo{year}{2013}\natexlab{}.
+\newblock \showarticletitle{{API} design for machine learning software:
+  experiences from the scikit-learn project}. In \bibinfo{booktitle}{\emph{ECML
+  PKDD Workshop: Languages for Data Mining and Machine Learning}}.
+  \bibinfo{pages}{108--122}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Devlin, Chang, Lee, and Toutanova}{Devlin
+  et~al\mbox{.}}{2018}]%
+        {devlin2018bert}
+\bibfield{author}{\bibinfo{person}{Jacob Devlin}, \bibinfo{person}{Ming-Wei
+  Chang}, \bibinfo{person}{Kenton Lee}, {and} \bibinfo{person}{Kristina
+  Toutanova}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Bert: Pre-training of deep bidirectional
+  transformers for language understanding}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:1810.04805}}
+  (\bibinfo{year}{2018}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Han, Pei, and Kamber}{Han
+  et~al\mbox{.}}{2011}]%
+        {han2011data}
+\bibfield{author}{\bibinfo{person}{Jiawei Han}, \bibinfo{person}{Jian Pei},
+  {and} \bibinfo{person}{Micheline Kamber}.} \bibinfo{year}{2011}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Data mining: concepts and techniques}}.
+\newblock \bibinfo{publisher}{Elsevier}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{MacQueen et~al\mbox{.}}{MacQueen
+  et~al\mbox{.}}{1967}]%
+        {macqueen1967some}
+\bibfield{author}{\bibinfo{person}{James MacQueen} {et~al\mbox{.}}}
+  \bibinfo{year}{1967}\natexlab{}.
+\newblock \showarticletitle{Some methods for classification and analysis of
+  multivariate observations}. In \bibinfo{booktitle}{\emph{Proceedings of the
+  fifth Berkeley symposium on mathematical statistics and probability}},
+  Vol.~\bibinfo{volume}{1}. Oakland, CA, USA, \bibinfo{pages}{281--297}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Murphy}{Murphy}{2012}]%
+        {murphy2012machine}
+\bibfield{author}{\bibinfo{person}{Kevin~P Murphy}.}
+  \bibinfo{year}{2012}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Machine learning: a probabilistic
+  perspective}}.
+\newblock \bibinfo{publisher}{MIT press}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Pearson}{Pearson}{1901}]%
+        {pearson1901liii}
+\bibfield{author}{\bibinfo{person}{Karl Pearson}.}
+  \bibinfo{year}{1901}\natexlab{}.
+\newblock \showarticletitle{LIII. On lines and planes of closest fit to systems
+  of points in space}.
+\newblock \bibinfo{journal}{\emph{The London, Edinburgh, and Dublin
+  philosophical magazine and journal of science}} \bibinfo{volume}{2},
+  \bibinfo{number}{11} (\bibinfo{year}{1901}), \bibinfo{pages}{559--572}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Reimers and Gurevych}{Reimers and
+  Gurevych}{2020}]%
+        {reimers-2020-multilingual-sentence-bert}
+\bibfield{author}{\bibinfo{person}{Nils Reimers} {and} \bibinfo{person}{Iryna
+  Gurevych}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Making Monolingual Sentence Embeddings Multilingual
+  using Knowledge Distillation}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2004.09813}}
+  (\bibinfo{date}{04} \bibinfo{year}{2020}).
+\newblock
+\urldef\tempurl%
+\url{http://arxiv.org/abs/2004.09813}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Sch{\"u}tze, Manning, and
+  Raghavan}{Sch{\"u}tze et~al\mbox{.}}{2008}]%
+        {schutze2008introduction}
+\bibfield{author}{\bibinfo{person}{Hinrich Sch{\"u}tze},
+  \bibinfo{person}{Christopher~D Manning}, {and} \bibinfo{person}{Prabhakar
+  Raghavan}.} \bibinfo{year}{2008}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Introduction to information retrieval}}.
+  Vol.~\bibinfo{volume}{39}.
+\newblock \bibinfo{publisher}{Cambridge University Press Cambridge}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Van~der Maaten and Hinton}{Van~der Maaten and
+  Hinton}{2008}]%
+        {van2008visualizing}
+\bibfield{author}{\bibinfo{person}{Laurens Van~der Maaten} {and}
+  \bibinfo{person}{Geoffrey Hinton}.} \bibinfo{year}{2008}\natexlab{}.
+\newblock \showarticletitle{Visualizing data using t-SNE.}
+\newblock \bibinfo{journal}{\emph{Journal of machine learning research}}
+  \bibinfo{volume}{9}, \bibinfo{number}{11} (\bibinfo{year}{2008}).
+\newblock
+
+
+\end{thebibliography}

@@ -61,6 +61,9 @@ assert sorted(Counter(df['Category']).values()) == sorted(Counter(df['Category_l
 df_gb = df.groupby('Category')
 print('Number of Category: {}'.format(df_gb.ngroups))
 print(df_gb.size())
+# %% ploting of counter of application.
+df_gb.size().plot(kind='bar', title='Counter of Application')
+plt.show()
 
 # %%
 # Corpus with resumes

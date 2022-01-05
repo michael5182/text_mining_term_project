@@ -1,0 +1,68 @@
+This is BibTeX, Version 0.99d (TeX Live 2020)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: report.aux
+The style file: ACM-Reference-Format.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: mybib.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--empty publisher in sklearn_api
+Warning--empty address in sklearn_api
+Warning--no number and no volume in devlin2018bert
+Warning--page numbers missing in both pages and numpages fields in devlin2018bert
+Warning--empty address in han2011data
+Warning--can't use both volume and number fields in macqueen1967some
+Warning--empty publisher in macqueen1967some
+Warning--empty address in macqueen1967some
+Warning--empty address in murphy2012machine
+Warning--no number and no volume in reimers-2020-multilingual-sentence-bert
+Warning--page numbers missing in both pages and numpages fields in reimers-2020-multilingual-sentence-bert
+Warning--empty address in schutze2008introduction
+Warning--page numbers missing in both pages and numpages fields in van2008visualizing
+You've used 10 entries,
+            5901 wiz_defined-function locations,
+            1377 strings with 16510 characters,
+and the built_in function-call counts, 11121 in all, are:
+= -- 1352
+> -- 481
+< -- 0
++ -- 158
+- -- 172
+* -- 822
+:= -- 1226
+add.period$ -- 55
+call.type$ -- 10
+change.case$ -- 73
+chr.to.int$ -- 10
+cite$ -- 23
+duplicate$ -- 921
+empty$ -- 651
+format.name$ -- 196
+if$ -- 2597
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 32
+newline$ -- 124
+num.names$ -- 80
+pop$ -- 357
+preamble$ -- 1
+purify$ -- 163
+quote$ -- 0
+skip$ -- 318
+stack$ -- 0
+substring$ -- 715
+swap$ -- 83
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 199
+warning$ -- 13
+while$ -- 73
+width$ -- 0
+write$ -- 213
+(There were 13 warnings)
