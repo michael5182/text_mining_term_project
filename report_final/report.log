@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.6.17)  6 JAN 2022 16:54
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.6.17)  6 JAN 2022 17:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2208,7 +2208,7 @@ Class acmart Warning: A possible image without description on input line 413.
 Underfull \vbox (badness 3826) has occurred while \output is active []
 
  [5.5]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 4108) has occurred while \output is active []
 
  [6.6]
 Processing 'acks' comment.
@@ -2237,15 +2237,15 @@ See the acmart class documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.472 \end{document}
+l.473 \end{document}
                     
 ? 
 [8.8]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 472.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 472.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 473.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 473.
  (./report.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 472.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 472.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 473.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 473.
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: CDA8B7E7C2B357B97F35EA364A6660CF;1343.
 
@@ -2256,7 +2256,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  32245 strings out of 479418
  643460 string characters out of 5884585
- 888999 words of memory out of 5000000
+ 889999 words of memory out of 5000000
  49101 multiletter control sequences out of 15000+600000
  558919 words of font info for 159 fonts, out of 8000000 for 9000
  1509 hyphenation exceptions out of 8191

@@ -292,7 +292,7 @@ Category表示對應所求職之職位名，
 
 \begin{equation}
     \label{eq:c_dot}
-    D^{c^{'}} := \{ c^{'}\in C, c\in C, c^{'} \neq c, d\in D : \arg \min sim(d^{*}_{c}, \overline{d}_{c^{'}}) \}
+    D_{c^{'}} := \{ c^{'}\in C, c\in C, c^{'} \neq c, d\in D : \arg \min sim(d^{*}_{c}, \overline{d}_{c^{'}}) \}
 \end{equation}
 
 
@@ -413,6 +413,7 @@ TEACHER                & AGRICULTURE            & 19918523   & 24791126    & 0.5
 \end{figure}
 
 表.~\ref{table:1}呈現本專案中所出之各類別中具有跨領域性質之履歷表，
+右邊欄位`similarity`意思為$d^{*}$與$\overline{d}_{c^{'}}$之相似度，
 比對各個相關性（Cosine Similarity），
 該些數值皆可看出不高，
 推測應為該些履歷表除了有跨領域性質外，
