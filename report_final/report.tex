@@ -80,10 +80,16 @@
     對於學生而言，除了努力完成學業或完成研究以取得畢業之外，
     如何透過簡歷(Resume)的撰寫去應徵企業的招募也是一件重要的事。
     然而如何撰寫簡歷不是一件簡單的。
-    因此我們小組從網際網路上找尋到一個人簡歷的開放資料集，
+    因此我們小組從網際網路上找尋到履歷的開放資料集，
     透過分群方法（Clustering）來對該資料集進行研究，
     我們檢驗履歷的寫法是否能對應到公司招聘的職位，
     另外我們也找出一些能夠申請多種工作類別的簡歷寫法，
+    依本專案之結果發現，
+    其資料集之內容應符合常識，
+    意即該些申請對應之職缺與透過演算法的自動分群結果比較，
+    並無顯著差異，
+    另外似乎沒看到有趣之具跨領域特性之履歷，
+    不過我們也找出並整理了一些寫法上可以加強品質之履歷，
     此次研究希望透過該開放資料集所作的初步研究，
     希望能對學生們製作個人簡歷上能有所幫助。
 \end{abstract}
@@ -187,8 +193,7 @@
 
 針對履歷資料，
 我使用了公開資料集作為本專案之資料，
-其以Kaggle網站公開之實際之工作求職者履歷資料進行分析\cite{kaggle_dataset}。
-
+其以Kaggle網站公開之實際之工作求職者履歷資料進行分析\cite{kaggle_dataset}，
 該資料共擁有三個欄位，
 分別為ID，
 Resume\_str，
@@ -202,7 +207,7 @@ Category表示對應所求職之職位名，
 意即共有2484筆resume。
 
 \begin{figure}
-    \centerline{\includegraphics[width=1.0\textwidth]{counter_of_application.png}}
+    \centerline{\includegraphics[width=0.5\textwidth]{counter_of_application.png}}
     \caption{The counting for each application catogery in resume}
     \label{counter_of_application}
 \end{figure}
@@ -213,7 +218,10 @@ Category表示對應所求職之職位名，
 我們主要進行兩項工作，
 然而在進行之前，
 我們需要進行資料前處理工作，
-才能將履歷資料轉換成我們可以分析的資料。
+才能將履歷資料轉換成我們可以分析的資料，
+在開始分析前，
+我們會將履歷中各個多餘空格去除，
+避免該些空格造成分析上的偏誤。
 
 我們透過使用Sentence-Transformers\cite{reimers-2020-multilingual-sentence-bert}工具，
 將資料集之真實履歷資料，
@@ -239,37 +247,83 @@ Category表示對應所求職之職位名，
 在取得word embeddings後，
 我們會先針對此資料，
 使用python的sklearn\cite{sklearn_api}套件，
-使用主流之分群方法進行檢驗\cite{han2011data}，
+使用資料探勘之常見分群方法（k-means clustering）進行檢驗\cite{han2011data}，
 其目的為確保該些履歷資料具有可信性，
 意即針對特定群體之履歷，
 其所對應之相同職缺，
-該些個別履歷資料之特性應具有相似性。
+該些個別履歷資料之特性應具有相似性，
+我們將採用k-means分群方法\cite{macqueen1967some}進行分析。
 
-第一種分群方法，
-我們採用k-means分群方法\cite{macqueen1967some}，
-第二種分群方法，
-我們採用PCA（Princial Component Analysis）\cite{pearson1901liii}。
 %第三種分群方法，
-%我們採用DBSCAN（Density-based spatial clustering of applications with noise）DBSCAN\cite{ester1996density}。
-
-針對結果，
-我使用了t-sne\cite{van2008visualizing}作圖像化。
-
+%我們採用DBSCAN（Density-based spatial clustering of applications with noise）DBSCAN\cite{ester1996density}，
 
 \subsection{跨領域範本}
 
-我們使用歐及里德距離公式，
-計算出各群之中存在較偏遠之履歷資料，
-並將其視為具有跨領域性質之履歷。
+我們希望能找到是否有具跨領域性質之履歷，
+因此希望找出該些履歷離所屬之職務類別之核心履歷越遠越好，
+且該履歷可能與其他職缺很相近。
+
+因此
+為達此目的，
+我們共進行三個步驟，
+首先，
+我們計算各職缺類別之平均中心向量如公式 \ref{overline}所示，
+之後我們將利用平均中心向量求得各職務群內之核心履歷$\hat{d}$如公式 \ref{d_hat} 所示，
+再將該核心履歷 $\hat{d}$拿來求得該職務群內最不相似之履歷 $d^{*}$，如公式 \ref{d_star} 所示，
+並將其視為具有跨領域性質之履歷，
+其計算相似度之方法，我們使用餘弦相似度計算式（cosine similarity）\cite{schutze2008introduction}，
+最後我們用$d^{*}$來計算離其最近之職務群如公式 \ref{eq:c_dot} 所示，
+用以來觀察該履歷$d^{*}$是否具有跨領域之性質。
+
+\begin{equation}
+    \label{overline}
+    \overline{d}_c := \frac{1}{|d_{c}|}\sum_{i=1}^{|d_{c}|}{d_{c,i}}\;, \quad c\in C, d\in D.
+\end{equation}
+
+\begin{equation}
+    \label{d_hat}
+    \hat{d}_c := \arg \max_{c\in C, d\in D} sim(\overline{d}, d_{k \in c}).
+\end{equation}
+
+\begin{equation}
+    \label{d_star}
+    d^{*}_c := \arg \min_{c\in C, d\in D} sim(\hat{d}_c, d_{k \in c}).
+\end{equation}
+
+\begin{equation}
+    \label{eq:c_dot}
+    D^{c^{'}} := \{ c^{'}\in C, c\in C, c^{'} \neq c, d\in D : \arg \min sim(d^{*}_{c}, \overline{d}_{c^{'}}) \}
+\end{equation}
+
 
 \section{研究結果}
+
+於本專案中，
+我們所使用之實驗機器規格為一般配有GPU之個人電腦，
+CPU為AMD Ryzen Threadripper 1920X 12-Core Processor，
+其核心數為24，
+作業系統版本為Ubuntu 16.04.5 LTS，
+記憶體為125G，
+GPU為GeForce RTX 2080 Ti。
 
 \subsection{履歷一致性}
 
 \begin{figure}
-    \centerline{\includegraphics[width=1.0\textwidth]{elbow_method.png}}
+    \centerline{\includegraphics[width=0.5\textwidth]{elbow_method.png}}
     \caption{Elbow method for optimal clustering number}
     \label{elbow_method}
+\end{figure}
+
+\begin{figure}
+    \centerline{\includegraphics[width=0.5\textwidth]{t_sne.png}}
+    \caption{The result of t-SNE for k-means clustering}
+    \label{t_sne}
+\end{figure}
+
+\begin{figure}
+    \centerline{\includegraphics[width=0.5\textwidth]{pca.png}}
+    \caption{The result of PCA for k-means clustering}
+    \label{pca}
 \end{figure}
 
 為了要檢驗資料中的履歷是否與該申請之職缺相符，
@@ -277,12 +331,136 @@ Category表示對應所求職之職位名，
 利用elbow method來取得最適分群數（Optimal clustering number)，
 其結果如圖.~\ref{elbow_method}，
 所得值為18，
+對照原來之職缺總數共計24項，
+可看出差距雖為6，
+應不是顯著數字，
+從此差距數字下，
+我們可推論不同的申請之職業類別的群集結與自動分群結果相似，
+
+另外我們也使用了Adjusted Rand Index來評價分群的結果\cite{hubert1985comparing}，
+k-means分群結果所得之Adjusted Rand Index為0.192，
+其值大於零，
+因此具有分群結果具有可信性，
+然其值看似不接近於1，
+可推論為該些履歷內含有求職者個人化訊息，
+加大了資料間的離散程度。
+
+針對結果，
+我們採用PCA（Princial Component Analysis）\cite{pearson1901liii} \cite{han2011data}將k-means之分群結果進行降維，
+將word embeddings維數降成兩維，
+如圖.~\ref{pca}所示，
+各顏色代表各別之職缺類別，
+由此圖可看出類別間應具一定的差異性。
+
+另一方面，
+雖PCA為資料探勘之常見方法，
+但因為資料全為文字，
+所以我也使用了t-SNE（t-Distributed Stochastic Neighbor Embedding）\cite{van2008visualizing}作為補助判斷 ，
+如圖.~\ref{t_sne}所示，
+各顏色代表各別之職缺類別，
+雖不若PCA結果如此一致，
+但仍可看出各類別間的分群結果具有一定差異性。
+
+\begin{table}[t]
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+$c$                 & $c^{'}$                & $\hat{d}$ & $d^{*}$ & similarity  \\ \hline
+ACCOUNTANT             & FITNESS                & 21338490   & 24799301    & 0.62522 \\ \hline
+ADVOCATE               & HEALTHCARE             & 36392131   & 21614256    & 0.45807 \\ \hline
+AGRICULTURE            & DIGITAL-MEDIA          & 19532392   & 34141299    & 0.53679 \\ \hline
+APPAREL                & ADVOCATE               & 27176039   & 35121930    & 0.58595 \\ \hline
+ARTS                   & ENGINEERING            & 36379931   & 26069113    & 0.33301 \\ \hline
+AUTOMOBILE             & BPO                    & 15210069   & 18448085    & 0.59860 \\ \hline
+AVIATION               & ARTS                   & 16279537   & 12239749    & 0.66597 \\ \hline
+BANKING                & FITNESS                & 21645690   & 18369400    & 0.29481 \\ \hline
+BPO                    & ENGINEERING            & 16492045   & 63158213    & 0.53825 \\ \hline
+BUSINESS-DEVELOPMENT   & INFORMATION-TECHNOLOGY & 98379112   & 12632728    & 0.10875 \\ \hline
+CHEF                   & ARTS                   & 20321582   & 47317494    & 0.59843 \\ \hline
+CONSTRUCTION           & DESIGNER               & 29894080   & 22983516    & 0.65415 \\ \hline
+CONSULTANT             & AGRICULTURE            & 32433431   & 21512769    & 0.58459 \\ \hline
+DESIGNER               & PUBLIC-RELATIONS       & 38565119   & 39434376    & 0.46325 \\ \hline
+DIGITAL-MEDIA          & INFORMATION-TECHNOLOGY & 14945250   & 11005406    & 0.58227 \\ \hline
+ENGINEERING            & BPO                    & 25608963   & 12022566    & 0.43318 \\ \hline
+FINANCE                & PUBLIC-RELATIONS       & 11441764   & 20836112    & 0.65782 \\ \hline
+FITNESS                & ENGINEERING            & 29165698   & 22488036    & 0.63132 \\ \hline
+HEALTHCARE             & PUBLIC-RELATIONS       & 13565152   & 10480456    & 0.49030 \\ \hline
+HR                     & HEALTHCARE             & 34740556   & 39081840    & 0.60773 \\ \hline
+INFORMATION-TECHNOLOGY & AGRICULTURE            & 15791766   & 17987433    & 0.38101 \\ \hline
+PUBLIC-RELATIONS       & CHEF                   & 28290448   & 26127853    & 0.69702 \\ \hline
+SALES                  & BPO                    & 19582792   & 12351749    & 0.60625 \\ \hline
+TEACHER                & AGRICULTURE            & 19918523   & 24791126    & 0.58996 \\ \hline
+\end{tabular}%
+}
+\caption{The detail of result of finding $d^{*}$.}
+\label{table:1}
+\end{table}
 
 
 \subsection{跨領域範本}
 
+\begin{figure}[t]
+    \centerline{\includegraphics[width=0.5\textwidth]{resume_d_hat.png}}
+    \caption{The resume $\hat{d}$ of category `ACCOUNTTANT`}
+    \label{resume_d_hat}
+\end{figure}
+
+\begin{figure}[t]
+    \centerline{\includegraphics[width=0.5\textwidth]{resume_d_star.png}}
+    \caption{The resume $d^{*}$ of category `ACCOUNTTANT`}
+    \label{resume_d_star}
+\end{figure}
+
+表.~\ref{table:1}呈現本專案中所出之各類別中具有跨領域性質之履歷表，
+比對各個相關性（Cosine Similarity），
+該些數值皆可看出不高，
+推測應為該些履歷表除了有跨領域性質外，
+另一層面，
+可能也代表了該些履歷表的品質不若其他同類型之履歷表高，
+舉例而言，
+圖.~\ref{resume_d_hat}及圖.~\ref{resume_d_star}分別代表ACCOUNTANT類別的兩種履歷（$\hat{d}$，$d^{*}$），
+可看出兩者的差別在於，
+後者的履歷相較於前者的履歷而言，
+對於ACCOUNTTANT的文字較少著墨，
+因此也可推斷為該履歷相較之下較不易辨別為申請ACCOUNTANT工作。
+
+至於跨領域性質之履歷資料，
+依表.~\ref{table:1}之similariy結果而言，
+似看不出顯著高之結果，
+可能因為不同職缺要求之文字上的差異較大，
+因此依此結果，
+可能找不到適合有跨領域特性之履歷。
+
 \section{結論}
 
+於本專案，
+我們針對了網路公開之真實履歷資料進行了初步之文字探勘，
+針對了該些履歷資料，
+我們共進行了兩個步驟，
+其一為檢驗該些履歷是否符合我們一般常識，
+其二找出是否具有跨領域性質之履歷。
+
+關於檢驗履歷，
+我們使用了k-means作為分群方法，
+在分析的過程中，
+我們可看出該些履歷的分群結果數量，
+與其原本求職職缺的類別數未相異過大，
+再輔以資料視覺化之方法，
+推斷本專案所使用之資料來符合我們常識且分析結果具有可信性。
+
+再者我們將該些履歷資料進一步分析，
+以期找出合適之具跨領域之履歷資料，
+然該依結果而言，
+似乎看不出有趣之履歷資料，
+但也看到一些履歷在撰寫上，
+不同品質上之差異，
+易言之，
+在履歷撰寫上，
+提及跟職缺相關之文字於履歷中，
+或許對履歷之品質提昇或有幫助，
+因此我們也整理後附上了那些可參照之履歷（相關性高及相關性低），
+以供讀者參照去查看原始履歷。
 
 \begin{acks}
     謝謝老師上課所教授之知識，使得我們能得以完成此次報告研究。

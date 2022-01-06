@@ -308,12 +308,16 @@ def search_resumeID(query_embedding, corpus_embeddings, top_k):
     hits = util.semantic_search(query_embedding, corpus_embeddings, top_k=top_k)
     hits = hits[0]
     for hit in hits:
-        print(df.ID[hit['corpus_id']], "(Score: {:.4f})".format(hit['score']))
+        print(
+            df.Category[hit['corpus_id']],
+            df.ID[hit['corpus_id']],
+            "(Score: {:.4f})".format(hit['score'])
+        )
 
 
 # %%
 
-corpus_embeddings = model.encode(Resume_corpus)
+# corpus_embeddings = model.encode(Resume_corpus)
 
 A = [1, 2, 3, ...]  # 768
 B = [8, 2, 1, ...]  # 768
@@ -328,7 +332,6 @@ IT_avg_embedding = get_avg_embeddings_revised(df_gb, corpus_embeddings, 'INFORMA
 
 query_embedding = (ACCNT_avg_embedding + IT_avg_embedding) / 2
 search_resumeID(query_embedding, corpus_embeddings, top_k=5)
-
 
 # %%
 
@@ -354,3 +357,53 @@ def cross_domain(df_gb, domains, corpus_embeddings, top_k):
 # %%
 
 cross_domain(df_gb, ['ACCOUNTANT', 'ADVOCATE', 'AGRICULTURE'], corpus_embeddings, 5)
+
+# %% completing of finding cross-domain resume.
+
+l_result: list = list()
+for domain in df_gb.size().keys():
+
+    embeddings_group = corpus_embeddings[df_gb.get_group(domain).index]
+    embeddings_mean = np.mean(embeddings_group, axis=0)
+
+    # find d_hat.
+    result_hat = [
+        (i,
+         np.dot(embeddings_mean, embeddings_group[i]) / (np.linalg.norm(embeddings_mean) * np.linalg.norm(embeddings_group[i]))
+        )
+        for i in range(embeddings_group.shape[0])
+    ]
+
+    d_hat_id_raw, result_cosine_hat = max(result_hat, key=lambda a: a[1])
+    print(f"result of d_hat:", d_hat_id_raw, result_cosine_hat)
+    d_hat = embeddings_group[d_hat_id_raw]
+    d_hat_id = df_gb.get_group(domain).iloc[d_hat_id_raw].ID
+
+    # find d_star.
+    result_star = [
+        (i,
+         np.dot(d_hat, embeddings_group[i]) / (np.linalg.norm(d_hat) * np.linalg.norm(embeddings_group[i]))
+         )
+        for i in range(embeddings_group.shape[0])
+    ]
+
+    d_star_id_raw, result_cosine_star = min(result_star, key=lambda a: a[1])
+    print("result of d_star:", d_star_id_raw, result_cosine_star)
+    d_star = embeddings_group[d_star_id_raw]
+    d_star_id = df_gb.get_group(domain).iloc[d_star_id_raw].ID
+
+    # %% find the closed clustering of d_star.
+    result_each_category_embedding_mean: list = [
+        (domain_k, np.mean(corpus_embeddings[df_gb.get_group(domain_k).index], axis=0)) for domain_k in df_gb.size().keys() if domain != domain_k
+    ]
+    result_find_closed_category: list = [(domain2, np.dot(d_star, em2) / (np.linalg.norm(d_star) * np.linalg.norm(em2))) for domain2, em2 in result_each_category_embedding_mean]
+    domain2, result_cosine_domain2 = max(result_find_closed_category, key=lambda a: a[1])
+    print("result of finding closed category (domain, domain2, similarity):", domain, domain2, result_cosine_domain2)
+
+    # %%
+
+    cols = "domain,domain2,d_hat_id,d_star_id,result_cosine_domain2"
+    l_result.append(eval(cols))
+
+# %%
+dfresult = pd.DataFrame(l_result, columns=cols.split(','))

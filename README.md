@@ -6,4 +6,4 @@
 - 整合的程式為[main.sh](main.py)
 - 期未報告要求之格式資料供參照[amc-template](acmart_primary)
 - [期初提案報告](report_proposal/report.pdf)
-- [期未提案報告](report_final/report.pdf)
+- [期未報告](report_final/report.pdf)

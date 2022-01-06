@@ -24,45 +24,45 @@ Warning--no number and no volume in reimers-2020-multilingual-sentence-bert
 Warning--page numbers missing in both pages and numpages fields in reimers-2020-multilingual-sentence-bert
 Warning--empty address in schutze2008introduction
 Warning--page numbers missing in both pages and numpages fields in van2008visualizing
-You've used 10 entries,
+You've used 11 entries,
             5901 wiz_defined-function locations,
-            1377 strings with 16510 characters,
-and the built_in function-call counts, 11121 in all, are:
-= -- 1352
-> -- 481
+            1384 strings with 16629 characters,
+and the built_in function-call counts, 12429 in all, are:
+= -- 1563
+> -- 519
 < -- 0
-+ -- 158
-- -- 172
-* -- 822
-:= -- 1226
-add.period$ -- 55
-call.type$ -- 10
-change.case$ -- 73
-chr.to.int$ -- 10
-cite$ -- 23
-duplicate$ -- 921
-empty$ -- 651
-format.name$ -- 196
-if$ -- 2597
++ -- 171
+- -- 188
+* -- 904
+:= -- 1349
+add.period$ -- 60
+call.type$ -- 11
+change.case$ -- 79
+chr.to.int$ -- 11
+cite$ -- 24
+duplicate$ -- 1027
+empty$ -- 726
+format.name$ -- 216
+if$ -- 2938
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 32
-newline$ -- 124
-num.names$ -- 80
-pop$ -- 357
+missing$ -- 36
+newline$ -- 132
+num.names$ -- 88
+pop$ -- 390
 preamble$ -- 1
-purify$ -- 163
+purify$ -- 178
 quote$ -- 0
-skip$ -- 318
+skip$ -- 356
 stack$ -- 0
-substring$ -- 715
-swap$ -- 83
+substring$ -- 821
+swap$ -- 96
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 199
+type$ -- 215
 warning$ -- 13
-while$ -- 73
+while$ -- 84
 width$ -- 0
-write$ -- 213
+write$ -- 230
 (There were 13 warnings)

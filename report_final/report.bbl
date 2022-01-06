@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{10}
+\begin{thebibliography}{11}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -88,6 +88,17 @@
   {and} \bibinfo{person}{Micheline Kamber}.} \bibinfo{year}{2011}\natexlab{}.
 \newblock \bibinfo{booktitle}{\emph{Data mining: concepts and techniques}}.
 \newblock \bibinfo{publisher}{Elsevier}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Hubert and Arabie}{Hubert and Arabie}{1985}]%
+        {hubert1985comparing}
+\bibfield{author}{\bibinfo{person}{Lawrence Hubert} {and}
+  \bibinfo{person}{Phipps Arabie}.} \bibinfo{year}{1985}\natexlab{}.
+\newblock \showarticletitle{Comparing partitions}.
+\newblock \bibinfo{journal}{\emph{Journal of classification}}
+  \bibinfo{volume}{2}, \bibinfo{number}{1} (\bibinfo{year}{1985}),
+  \bibinfo{pages}{193--218}.
 \newblock
 
 
