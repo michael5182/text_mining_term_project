@@ -255,16 +255,16 @@ mpl.rcParams['lines.markersize'] = 2
 for i in range(num_clusters):
     plt.scatter(
         corpus_embeddings_2d[cluster_assignment == i, 0],
-        corpus_embeddings_2d[cluster_assignment == i, 1], s=3
+        corpus_embeddings_2d[cluster_assignment == i, 1], s=3, c='grey'
     )
 
 df_group = df_gb.get_group(domain1)
 group_corpus_embeddings = corpus_embeddings_2d[df_group.index]
-plt.scatter(group_corpus_embeddings[:, 0], group_corpus_embeddings[:, 1], label='CHEF', c='black')
+plt.scatter(group_corpus_embeddings[:, 0], group_corpus_embeddings[:, 1], label='CHEF', c='black', s=20)
 
 df_group = df_gb.get_group(domain2)
 group_corpus_embeddings = corpus_embeddings_2d[df_group.index]
-plt.scatter(group_corpus_embeddings[:, 0], group_corpus_embeddings[:, 1], label='FINANCE', c='red')
+plt.scatter(group_corpus_embeddings[:, 0], group_corpus_embeddings[:, 1], label='FINANCE', c='red', s=20)
 
 plt.title(f"The plotting of clustering for `{domain1}` and `{domain2}` features")
 plt.legend()
