@@ -1,5 +1,5 @@
 % \documentclass[acmsmall]{acmart}
-\documentclass[sigconf]{acmart}
+\documentclass[sigconf]
 \usepackage[UTF8, fontset=macnew]{ctex}
 \usepackage{graphicx}
 \graphicspath{ {./images/} }
@@ -302,6 +302,7 @@ $C$為所有職缺類別之集合，
 並將其視為具有跨領域性質之履歷，
 其計算相似度之方法，我們使用餘弦相似度計算式（cosine similarity）\cite{schutze2008introduction}，
 最後我們用$d^{*}$來計算離其最近之職務群如公式 \ref{eq:d_bar} 及公式 \ref{eq:c_dot} 所示，
+$D_{c^{'}}$表示為找出之與具有跨領域性質之履歷$d^{*}$相似之求職類別之文件集合。
 用以來觀察該履歷$d^{*}$是否具有跨領域之性質。
 
 \begin{equation}
@@ -311,12 +312,12 @@ $C$為所有職缺類別之集合，
 
 \begin{equation}
     \label{d_hat}
-    \hat{d}_c := \arg \max_{c\in C, d\in D} sim(\overline{d}, d_{k \in c}).
+    \hat{d}_c := \arg \max_{k} sim(\overline{d_{c}}, d_{k \in c}).
 \end{equation}
 
 \begin{equation}
     \label{d_star}
-    d^{*}_c := \arg \min_{c\in C, d\in D} sim(\hat{d}_c, d_{k \in c}).
+    d^{*}_c := \arg \min_{k} sim(\hat{d}_c, d_{k \in c}).
 \end{equation}
 
 \begin{equation}
@@ -329,7 +330,7 @@ $C$為所有職缺類別之集合，
 
 \begin{equation}
     \label{eq:c_dot}
-    D_{c^{'}} := \{ d_{c^{'}}  : \arg \min sim(d^{*}_{c}, \overline{d}_{c^{'}}) \}
+    D_{c^{'}} := \{ d_{c^{'}}  : \arg \min_{c^{'}} sim(d^{*}_{c}, \overline{d}_{c^{'}}) \}
 \end{equation}
 
 
