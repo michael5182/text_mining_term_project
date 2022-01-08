@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.6.17)  6 JAN 2022 17:24
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.6.17)  8 JAN 2022 16:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1767,7 +1767,7 @@ ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 32.
  Excluding 'CCSXML' comment.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 18.06749pt on input line 144.
+(Font)              scaled to size 18.06749pt on input line 147.
 Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;m
 apping=tex-text;" at 18.06749pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinLiber
@@ -1797,7 +1797,7 @@ Requested font "PingFang SC/OT:script=hani;language=dflt;" at 18.06752pt
 Requested font "PingFang SC/OT:script=hani;language=dflt;" at 18.06752pt
  -> /System/Library/Fonts/PingFang.ttc
 LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
-(Font)              scaled to size 10.53937pt on input line 144.
+(Font)              scaled to size 10.53937pt on input line 147.
 Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;ma
 pping=tex-text;" at 10.53937pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinBioli
@@ -1832,13 +1832,13 @@ Package fontspec Info: Font family 'PingFangSC(0)' created for font 'PingFang
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
-(Font)              scaled to size 18.06749pt on input line 144.
+(Font)              scaled to size 18.06749pt on input line 147.
 Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;ma
 pping=tex-text;" at 18.06749pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinBioli
 num_R.otf
 LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/b/n' will be
-(Font)              scaled to size 18.06749pt on input line 144.
+(Font)              scaled to size 18.06749pt on input line 147.
 Requested font "[LinBiolinum_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;m
 apping=tex-text;" at 18.06749pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinBioli
@@ -1868,13 +1868,13 @@ Package microtype Info: Character `textquotedblright ' is missing
 (microtype)             in font `TU/PingFangSC(0)/b/n/18.06749'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 12.045pt on input line 144.
+(Font)              scaled to size 12.045pt on input line 147.
 Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;m
 apping=tex-text;" at 12.045pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinLiber
 tine_R.otf
 LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
-(Font)              scaled to size 12.045pt on input line 144.
+(Font)              scaled to size 12.045pt on input line 147.
 Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;ma
 pping=tex-text;" at 12.045pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinBioli
@@ -1900,13 +1900,13 @@ Package microtype Info: Character `textquotedblright ' is missing
 (microtype)             in font `TU/PingFangSC(0)/m/n/12.045'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 144.
+(Font)              scaled to size 9.03374pt on input line 147.
 Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;ma
 pping=tex-text;" at 9.03374pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinBioli
 num_R.otf
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 9.03374pt on input line 144.
+(Font)              scaled to size 9.03374pt on input line 147.
 Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;m
 apping=tex-text;" at 9.03374pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinLiber
@@ -1958,16 +1958,16 @@ Package microtype Info: Character `textquotedblright ' is missing
 
 
 Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 144.
+surrounding objects on input line 147.
 
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/n' will be
-(Font)              scaled to size 9.03374pt on input line 144.
+(Font)              scaled to size 9.03374pt on input line 147.
 Requested font "[LinLibertine_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;
 mapping=tex-text;" at 9.03374pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinLiber
 tine_RB.otf
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/it' will be
-(Font)              scaled to size 9.03374pt on input line 144.
+(Font)              scaled to size 9.03374pt on input line 147.
 Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;+tnum;+lnum;
 mapping=tex-text;" at 9.03374pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinLiber
@@ -2028,7 +2028,7 @@ Requested font "ntxexa" at 9.03374pt
 Requested font "ntxexa" at 6.0pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm
 LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/b/n' will be
-(Font)              scaled to size 10.53937pt on input line 146.
+(Font)              scaled to size 10.53937pt on input line 149.
 Requested font "[LinBiolinum_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;m
 apping=tex-text;" at 10.53937pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinBioli
@@ -2078,16 +2078,19 @@ File: ./images/counter_of_application.png Graphic file (type bmp)
 <./images/counter_of_application.png>
 
 
-Class acmart Warning: A possible image without description on input line 213.
+Class acmart Warning: A possible image without description on input line 235.
+
+
+Underfull \vbox (badness 2865) has occurred while \output is active []
 
 LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 226.
+(Font)              scaled to size 10.0pt on input line 266.
 Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;ma
 pping=tex-text;" at 10.0pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinBioli
 num_R.otf
 LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
-(Font)              scaled to size 7.52812pt on input line 226.
+(Font)              scaled to size 7.52812pt on input line 266.
 Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;ma
 pping=tex-text;" at 7.52812pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinBioli
@@ -2112,7 +2115,7 @@ Package microtype Info: Character `textquotedblleft ' is missing
 Package microtype Info: Character `textquotedblright ' is missing
 (microtype)             in font `TU/PingFangSC(0)/m/n/7.52812'.
 (microtype)             Ignoring protrusion settings for this character.
-[2.2]
+ [2.2]
 Requested font "cmr10" at 10.53937pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 Requested font "nxlmi" at 10.53937pt
@@ -2155,24 +2158,86 @@ Requested font "ntxexa" at 10.53937pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm
 Requested font "ntxexa" at 7.0pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm
- [3.3]
+
+[3.3]
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 322.
+Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;m
+apping=tex-text;" at 7.0pt
+ -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinLiber
+tine_R.otf
+Requested font "cmr7" at 7.3pt
+ -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr7.tfm
+Requested font "cmr5" at 5.5pt
+ -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr5.tfm
+Requested font "nxlmi7" at 7.3pt
+ -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/nxlmi7.tfm
+Requested font "nxlmi5" at 5.5pt
+ -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/nxlmi5.tfm
+Requested font "ntxsy7" at 7.3pt
+ -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/ntxsy7.tfm
+Requested font "ntxsy5" at 5.5pt
+ -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/ntxsy5.tfm
+Requested font "ntxexx" at 7.3pt
+ -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/ntxexx.tfm
+Requested font "ntxexx" at 5.5pt
+ -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/ntxexx.tfm
+Requested font "msam7" at 7.3pt
+ -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.
+tfm
+Requested font "msam5" at 5.5pt
+ -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.
+tfm
+Requested font "msbm7" at 7.3pt
+ -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.
+tfm
+Requested font "msbm5" at 5.5pt
+ -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.
+tfm
+Requested font "nxlmia" at 7.3pt
+ -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/nxlmia.tfm
+Requested font "nxlmia" at 5.5pt
+ -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/nxlmia.tfm
+Requested font "ntxsym" at 7.3pt
+ -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/ntxsym.tfm
+Requested font "ntxsym" at 5.5pt
+ -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/ntxsym.tfm
+Requested font "ntxsyc" at 7.3pt
+ -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/ntxsyc.tfm
+Requested font "ntxsyc" at 5.5pt
+ -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/ntxsyc.tfm
+Requested font "ntxexa" at 7.3pt
+ -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm
+Requested font "ntxexa" at 5.5pt
+ -> /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 322.
+Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;m
+apping=tex-text;" at 5.0pt
+ -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinLiber
+tine_R.otf
 File: ./images/elbow_method.png Graphic file (type bmp)
 <./images/elbow_method.png>
 
 
-Class acmart Warning: A possible image without description on input line 315.
+Class acmart Warning: A possible image without description on input line 349.
 
 File: ./images/t_sne.png Graphic file (type bmp)
 <./images/t_sne.png>
 
-Class acmart Warning: A possible image without description on input line 321.
+Class acmart Warning: A possible image without description on input line 355.
 
 File: ./images/pca.png Graphic file (type bmp)
 <./images/pca.png>
 
-Class acmart Warning: A possible image without description on input line 327.
+Class acmart Warning: A possible image without description on input line 361.
 
-[4.4]
+File: ./images/chef_finance_plotting.png Graphic file (type bmp)
+<./images/chef_finance_plotting.png>
+
+Class acmart Warning: A possible image without description on input line 367.
+
+[4.4] [5.5]
 Requested font "PingFang SC/OT:script=hani;language=dflt;" at 9.03374pt
  -> /System/Library/Fonts/PingFang.ttc
 Package microtype Info: Character `textendash ' is missing
@@ -2193,36 +2258,34 @@ Package microtype Info: Character `textquotedblleft ' is missing
 Package microtype Info: Character `textquotedblright ' is missing
 (microtype)             in font `TU/PingFangSC(0)/m/n/9.03374'.
 (microtype)             Ignoring protrusion settings for this character.
+File: ./images/cross_fields.png Graphic file (type bmp)
+<./images/cross_fields.png>
+
+
+Class acmart Warning: A possible image without description on input line 455.
+
 File: ./images/resume_d_hat.png Graphic file (type bmp)
 <./images/resume_d_hat.png>
 
-
-Class acmart Warning: A possible image without description on input line 407.
+Class acmart Warning: A possible image without description on input line 461.
 
 File: ./images/resume_d_star.png Graphic file (type bmp)
 <./images/resume_d_star.png>
 
-Class acmart Warning: A possible image without description on input line 413.
+Class acmart Warning: A possible image without description on input line 467.
 
-
-Underfull \vbox (badness 3826) has occurred while \output is active []
-
- [5.5]
-Underfull \vbox (badness 4108) has occurred while \output is active []
-
- [6.6]
-Processing 'acks' comment.
+[6.6] [7.7] Processing 'acks' comment.
 \openout3 = `comment.cut'.
 
  Comment 'acks' writing to comment.cut.
-Straight input of comment.cut. (./comment.cut) (./report.bbl
+Straight input of comment.cut. (./comment.cut) (./report.bbl [8.8]
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/it' will be
 (Font)              scaled to size 7.52812pt on input line 66.
 Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;+tnum;+lnum;
 mapping=tex-text;" at 7.52812pt
  -> /usr/local/texlive/2020/texmf-dist/fonts/opentype/public/libertine/LinLiber
 tine_RI.otf
- [7.7])
+)
 
 Class acmart Warning: Some images may lack descriptions.
 
@@ -2237,29 +2300,30 @@ See the acmart class documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.473 \end{document}
+l.552 \end{document}
                     
 ? 
-[8.8]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 473.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 473.
+[9.9]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 552.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 552.
  (./report.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 473.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 473.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 552.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 552.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: CDA8B7E7C2B357B97F35EA364A6660CF;1343.
+(rerunfilecheck)             Checksum: 3A7EA2391D2F5340D3A1D9BD504320A7;1399.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 32245 strings out of 479418
- 643460 string characters out of 5884585
- 889999 words of memory out of 5000000
- 49101 multiletter control sequences out of 15000+600000
- 558919 words of font info for 159 fonts, out of 8000000 for 9000
+ 32326 strings out of 479418
+ 646377 string characters out of 5884585
+ 890307 words of memory out of 5000000
+ 49178 multiletter control sequences out of 15000+600000
+ 566582 words of font info for 181 fonts, out of 8000000 for 9000
  1509 hyphenation exceptions out of 8191
- 69i,13n,111p,836b,555s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,12n,111p,836b,554s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on report.pdf (8 pages).
+Output written on report.pdf (9 pages).
+ort.pdf (9 pages).

@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex report"] 1641459290 "report.aux" "report.bbl" "report" 1641461070
+["bibtex report"] 1641632139 "report.aux" "report.bbl" "report" 1641632139
   "/usr/local/texlive/2020/texmf-dist/bibtex/bst/acmart/ACM-Reference-Format.bst" 1582593582 84856 cdf46f74ac483d72585084276eb3e09d ""
   "mybib.bib" 1641398094 3469 ec8b46cb091389c0862f127ff3264ade ""
-  "report.aux" 1641461018 6071 bd141b061485bad8b3ddf0c8682f39f3 "pdflatex"
+  "report.aux" 1641632139 4096 a1484044267dc9944b4a72273df80f51 "pdflatex"
   (generated)
   "report.blg"
   "report.bbl"
-["pdflatex"] 1641461070 "report.tex" "report.pdf" "report" 1641461070
+["pdflatex"] 1641632139 "report.tex" "report.pdf" "report" 1641632139
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -16,6 +16,7 @@
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm" 1246382020 940 75ac932a52f80982a9f8ea75d03a34cf ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1246382020 940 228d6584342e91276bf566bcf9716b83 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1136768653 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
+  "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr5.tfm" 1136768653 1220 ad296dff3c8796c18053ab7b9f86ad7c ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr6.tfm" 1136768653 1300 b62933e007d01cfd073f79b963c01526 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr7.tfm" 1136768653 1300 53d07721103816e093902637bc167021 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr9.tfm" 1136768653 1292 6b21b9c2c7bebb38aa2273f7ca0fb3af ""
@@ -161,20 +162,22 @@
   "/usr/local/texlive/2020/texmf-dist/web2c/texmf.cnf" 1583102494 39451 60d7debd9ef8ece44cbe965493576c2d ""
   "/usr/local/texlive/2020/texmf-var/web2c/xetex/xelatex.fmt" 1592375834 4769627 c9e53ad0a243c0c6da04221c9ab89c3a ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
-  "comment.cut" 1641461073 92 f762a8e9702c00b44d297d34e85f2ef0 "pdflatex"
+  "comment.cut" 1641632144 92 f762a8e9702c00b44d297d34e85f2ef0 "pdflatex"
+  "images/chef_finance_plotting.png" 1641631574 47362 136e572a91b262111b3fcf3c67ba664d ""
   "images/counter_of_application.png" 1641372510 38503 287dc7175ab649763953ce549a65a250 ""
+  "images/cross_fields.png" 1641630010 192799 15c3d65b68ebfffd8a846fdc65b609bd ""
   "images/elbow_method.png" 1641368932 18249 6cfa4e57ba1c5521a1c252ac97b52737 ""
   "images/pca.png" 1641400878 44519 bf66beffccaa10141408a6d166dec4e6 ""
   "images/resume_d_hat.png" 1641450967 142784 63509c32babe189d10cf9dbb4a002f1f ""
   "images/resume_d_star.png" 1641450932 114086 41d04ab8bb5ab5d7899fa551763e4301 ""
   "images/t_sne.png" 1641398383 50855 79334403d93e8d973e4c9052d633cc22 ""
-  "report.aux" 1641461018 6071 bd141b061485bad8b3ddf0c8682f39f3 "pdflatex"
-  "report.bbl" 1641459290 7522 14d2c04442c811e3220c194d0357ef95 "bibtex report"
-  "report.out" 1641461018 1343 cda8b7e7c2b357b97f35ea364a6660cf "pdflatex"
-  "report.tex" 1641461065 18656 aa862072fac2420e6624965cc1bf1419 ""
+  "report.aux" 1641632139 6903 a37b2f7fb128f3471b43a36038c3fa7c "pdflatex"
+  "report.bbl" 1641632139 7522 14d2c04442c811e3220c194d0357ef95 "bibtex report"
+  "report.out" 1641632139 1399 3a7ea2391d2f5340d3a1d9bd504320a7 "pdflatex"
+  "report.tex" 1641632136 22060 b8a62fe6285280122488afaa8387e573 ""
   (generated)
   "comment.cut"
-  "report.out"
   "report.pdf"
-  "report.log"
+  "report.out"
   "report.aux"
+  "report.log"
