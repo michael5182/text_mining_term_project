@@ -138,7 +138,7 @@ INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/base/fontenc.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/base/fontenc.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/lm/t1lmr.fd
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/lm/t1lmr.fd
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/lm/ec-lmr10.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/lm/ec-lmr9.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/libertine/libertine.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/libertine/libertine.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/generic/iftex/ifxetex.sty
@@ -239,6 +239,8 @@ INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-mac
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-macnew.def
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/ctex/config/ctex.cfg
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/ctex/config/ctex.cfg
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/preprint/balance.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/preprint/balance.sty
 INPUT report.aux
 INPUT report.aux
 OUTPUT report.aux

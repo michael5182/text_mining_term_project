@@ -1,4 +1,5 @@
-\documentclass[acmsmall]{acmart}
+% \documentclass[acmsmall]{acmart}
+\documentclass[sigconf]{acmart}
 \usepackage[UTF8, fontset=macnew]{ctex}
 \usepackage{graphicx}
 \graphicspath{ {./images/} }
@@ -292,7 +293,9 @@ Category表示對應所求職之職位名，
 因此
 為達此目的，
 我們共進行三個步驟，
-首先，
+令$D$為所有履歷之集合，
+$C$為所有職缺類別之集合，
+而$d_{c}$則表示為所於職缺$c$之履歷$d$，
 我們計算各職缺類別之平均中心向量如公式 \ref{overline}所示，
 之後我們將利用平均中心向量求得各職務群內之核心履歷$\hat{d}$如公式 \ref{d_hat} 所示，
 再將該核心履歷 $\hat{d}$拿來求得該職務群內最不相似之履歷 $d^{*}$，如公式 \ref{d_star} 所示，
@@ -319,14 +322,14 @@ Category表示對應所求職之職位名，
 \begin{equation}
     \label{eq:d_bar}
     \overline{d}_{c^{'}}=\begin{cases}
-    \overline{d}_{c^{'}} := \frac{1}{|d_{c^{'}}|}\sum \limits_{}^{|d_{c^{'}}|}{d_{c^{'}}}\;, \; c^{'}\in C, c\in C, c^{'} \neq c, d\in D, & \text{if $|c^{'}| \leq 1$}.\\
-    \overline{d}_{c^{'}} := \frac{1}{|c^{'}|} \sum \limits_{}^{|c^{'}|} \frac{1}{|d_{c^{'}}|}\sum \limits_{}^{|d_{c^{'}}|}{d_{c^{'}}}\;,\; c^{'}\in C, c\in C, c^{'} \neq c, d\in D, & \text{otherwise}.
+    \overline{d}_{c^{'}} := \frac{1}{|d_{c^{'}}|}\sum \limits_{}^{|d_{c^{'}}|}{d_{c^{'}}}, & \text{if $|c^{'}| \leq 1$}.\\
+    \overline{d}_{c^{'}} := \frac{1}{|c^{'}|} \sum \limits_{}^{|c^{'}|} \frac{1}{|d_{c^{'}}|}\sum \limits_{}^{|d_{c^{'}}|}{d_{c^{'}}}, & \text{otherwise}.
   \end{cases}
 \end{equation}
 
 \begin{equation}
     \label{eq:c_dot}
-    D_{c^{'}} := \{ d_{c^{'}}  : \arg \min sim(d^{*}_{c}, \overline{d}_{c^{'}}) , \quad c^{'}\in C, c\in C, c^{'} \neq c, d\in D \}
+    D_{c^{'}} := \{ d_{c^{'}}  : \arg \min sim(d^{*}_{c}, \overline{d}_{c^{'}}) \}
 \end{equation}
 
 

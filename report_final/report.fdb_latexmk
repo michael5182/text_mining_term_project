@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex report"] 1641632139 "report.aux" "report.bbl" "report" 1641632139
+["bibtex report"] 1641636978 "report.aux" "report.bbl" "report" 1641637064
   "/usr/local/texlive/2020/texmf-dist/bibtex/bst/acmart/ACM-Reference-Format.bst" 1582593582 84856 cdf46f74ac483d72585084276eb3e09d ""
   "mybib.bib" 1641398094 3469 ec8b46cb091389c0862f127ff3264ade ""
-  "report.aux" 1641632139 4096 a1484044267dc9944b4a72273df80f51 "pdflatex"
+  "report.aux" 1641636982 6907 ae0f90d7eed2bcd10fd68de8f20086c7 "pdflatex"
   (generated)
   "report.blg"
   "report.bbl"
-["pdflatex"] 1641632139 "report.tex" "report.pdf" "report" 1641632139
+["pdflatex"] 1641637064 "report.tex" "report.pdf" "report" 1641637064
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -21,7 +21,7 @@
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr7.tfm" 1136768653 1300 53d07721103816e093902637bc167021 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr9.tfm" 1136768653 1292 6b21b9c2c7bebb38aa2273f7ca0fb3af ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/latex-fonts/lasy6.tfm" 1136768653 520 4889cce2180234b97cad636b6039c722 ""
-  "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/lm/ec-lmr10.tfm" 1254269338 12056 7e13df7fe4cbce21b072ba7c4f4deb6e ""
+  "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/lm/ec-lmr9.tfm" 1254269338 12084 b7f5e4c003de6f57f07c7e9fee73a37c ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm" 1487028062 732 730660503dd6bc64b030e3f4fe261450 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/ntxexx.tfm" 1569879884 1772 e71b3849f8de8ff3ffaafae0ff23e991 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/newtx/ntxsy.tfm" 1583272976 2000 33f20474c9fe1489d6907a37300dec5a ""
@@ -145,6 +145,7 @@
   "/usr/local/texlive/2020/texmf-dist/tex/latex/newtx/untxsym.fd" 1427059306 561 d8e97a03c5c4248c2bf6d144fffb97f7 ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/oberdiek/centernot.sty" 1575152444 1640 c9cca60f81c5839b9a3e794d72c0b0a7 ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty" 1574631863 19963 36fd8e818f9f0f32e2db8413d4970122 ""
+  "/usr/local/texlive/2020/texmf-dist/tex/latex/preprint/balance.sty" 1137110595 3366 d938ad2440edc1ea1c9042843580ec42 ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty" 1576624809 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1575674187 9715 b051d5b493d9fe5f4bc251462d039e5f ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/textcase/textcase.sty" 1568497026 2156 a092fd3ecd0a13fd597725ee6894b032 ""
@@ -162,7 +163,7 @@
   "/usr/local/texlive/2020/texmf-dist/web2c/texmf.cnf" 1583102494 39451 60d7debd9ef8ece44cbe965493576c2d ""
   "/usr/local/texlive/2020/texmf-var/web2c/xetex/xelatex.fmt" 1592375834 4769627 c9e53ad0a243c0c6da04221c9ab89c3a ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
-  "comment.cut" 1641632144 92 f762a8e9702c00b44d297d34e85f2ef0 "pdflatex"
+  "comment.cut" 1641637068 92 f762a8e9702c00b44d297d34e85f2ef0 "pdflatex"
   "images/chef_finance_plotting.png" 1641631574 47362 136e572a91b262111b3fcf3c67ba664d ""
   "images/counter_of_application.png" 1641372510 38503 287dc7175ab649763953ce549a65a250 ""
   "images/cross_fields.png" 1641630010 192799 15c3d65b68ebfffd8a846fdc65b609bd ""
@@ -171,13 +172,13 @@
   "images/resume_d_hat.png" 1641450967 142784 63509c32babe189d10cf9dbb4a002f1f ""
   "images/resume_d_star.png" 1641450932 114086 41d04ab8bb5ab5d7899fa551763e4301 ""
   "images/t_sne.png" 1641398383 50855 79334403d93e8d973e4c9052d633cc22 ""
-  "report.aux" 1641632139 6903 a37b2f7fb128f3471b43a36038c3fa7c "pdflatex"
-  "report.bbl" 1641632139 7522 14d2c04442c811e3220c194d0357ef95 "bibtex report"
-  "report.out" 1641632139 1399 3a7ea2391d2f5340d3a1d9bd504320a7 "pdflatex"
-  "report.tex" 1641632136 22060 b8a62fe6285280122488afaa8387e573 ""
+  "report.aux" 1641636982 6907 ae0f90d7eed2bcd10fd68de8f20086c7 "pdflatex"
+  "report.bbl" 1641636979 7522 14d2c04442c811e3220c194d0357ef95 "bibtex report"
+  "report.out" 1641636982 1399 bc2854ac56753088da7917f5c2892ae4 "pdflatex"
+  "report.tex" 1641637063 22066 d9724c76ec78bbd177681d01387a5900 ""
   (generated)
-  "comment.cut"
   "report.pdf"
-  "report.out"
   "report.aux"
+  "comment.cut"
+  "report.out"
   "report.log"
