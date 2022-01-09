@@ -62,8 +62,29 @@ df_gb = df.groupby('Category')
 print('Number of Category: {}'.format(df_gb.ngroups))
 print(df_gb.size())
 # %% ploting of counter of application.
-df_gb.size().plot(kind='bar', title='Counter of Application')
+
+# df.groupby("Category_label").size().plot(kind='bar', title='Counter of Application', rot=0)
+df_gb2 = df.groupby(['Category', 'Category_label']).size()
+df_gb2.name = 'counter'
+df_gb2 = pd.DataFrame(df_gb2)
+df_gb2.reset_index(inplace=True)
+df_gb2.sort_values(by='Category_label', inplace=True)
+
+x_legend = '\n'.join(
+    f"{i} - {name}" for i, name in zip(df_gb2['Category_label'], df_gb2['Category'])
+)
+
+fig, ax = plt.subplots()
+ax.bar(df_gb2['Category_label'], df_gb2['counter'])
+
+t = ax.text(.63, .09, x_legend,transform=ax.figure.transFigure)
+fig.subplots_adjust(right=.60)
+
 plt.show()
+plt.close()
+# %%
+print(df.groupby("Category").count())
+
 
 # %%
 # Corpus with resumes
