@@ -1,21 +1,23 @@
 *.DS_Store
 *.idea
 
-.aux
-.bit
-.blg
-.bbl
-.lof
-.log
-.lot
-.glo
-.glx
-.gxg
-.gxs
-.idx
-.ilg
-.ind
-.out
-.url
-.svn
-.toc
+## Core latex/pdflatex auxiliary files:
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+*.fdb_latexmk
+*.synctex.gz
+comment.cut
+
+## The bibtex auxiliary files.
+*.bbl
+*.blg
