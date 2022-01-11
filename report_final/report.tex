@@ -266,6 +266,11 @@ Category表示對應所求職之職位名，
 
 \subsection{履歷一致性}
 
+針對此問題，我們提出了三種簡易方法及實驗數據；
+第一為比較k-means \cite{macqueen1967some}自動分群後的群集數與真實職缺數的差異、
+第二將職缺數量視為群集數，計算Adjusted Rand Index \cite{hubert1985comparing}，數值越高代表越一致。
+最後將職缺數量視為群集數，使用視覺化方式查看結果。
+
 在取得word embeddings後，
 我們會先針對此資料，
 透過python的sklearn\cite{sklearn_api}套件，
@@ -370,7 +375,7 @@ GPU為GeForce RTX 2080 Ti。
 
 
 為了要檢驗資料中的履歷是否與該申請之職缺相符，
-我們使用了k-means\cite{macqueen1967some}作為分群方法，
+我們使用了k-means \cite{macqueen1967some}作為分群方法，
 利用elbow method來取得最適分群數（Optimal clustering number)，
 其結果如圖.~\ref{elbow_method}，
 所得值為18，
@@ -380,7 +385,8 @@ GPU為GeForce RTX 2080 Ti。
 從此差距數字下，
 我們可推論不同的申請之職業類別的群集結與自動分群結果相似，
 
-另外我們也使用了Adjusted Rand Index來評價分群的結果\cite{hubert1985comparing}，
+另外我們將群集數設定為24（職缺數量，之後分群方法之群集數皆設定此值），
+使用了Adjusted Rand Index來評價分群的結果\cite{hubert1985comparing}，
 k-means分群結果所得之Adjusted Rand Index為0.192，
 其值大於零，
 因此具有分群結果具有可信性，
